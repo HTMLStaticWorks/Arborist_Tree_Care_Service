@@ -158,4 +158,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ---------- FAQ Accordion ---------- */
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const item = this.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all others
+      document.querySelectorAll('.faq-item').forEach(function (i) {
+        i.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
 });

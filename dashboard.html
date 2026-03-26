@@ -53,47 +53,79 @@
     </div>
 
     <div class="dashboard-content">
-      <!-- KPI CARDS -->
+      <!-- KPI + ENV IMPACT ROW -->
       <section id="analytics" class="mb-4">
         <div class="row g-3">
-          <div class="col-sm-6 col-xl-3">
-            <div class="kpi-card">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="kpi-icon" style="background:var(--primary);"><i class="bi bi-tree"></i></div>
-                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>12%</span>
+          <div class="col-xl-8">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="kpi-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="kpi-icon" style="background:var(--primary);"><i class="bi bi-tree"></i></div>
+                    <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>12%</span>
+                  </div>
+                  <div class="kpi-value">342</div>
+                  <div class="kpi-label">Trees Managed</div>
+                </div>
               </div>
-              <div class="kpi-value">342</div>
-              <div class="kpi-label">Trees Managed</div>
+              <div class="col-sm-6">
+                <div class="kpi-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="kpi-icon" style="background:var(--secondary);"><i class="bi bi-receipt"></i></div>
+                    <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>8%</span>
+                  </div>
+                  <div class="kpi-value">56</div>
+                  <div class="kpi-label">Active Work Orders</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="kpi-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="kpi-icon" style="background:#2196F3;"><i class="bi bi-calendar-check"></i></div>
+                    <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>15%</span>
+                  </div>
+                  <div class="kpi-value">18</div>
+                  <div class="kpi-label">Upcoming Consultations</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="kpi-card">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="kpi-icon" style="background:#E53935;"><i class="bi bi-chat-dots"></i></div>
+                    <span class="kpi-change down"><i class="bi bi-arrow-down-short"></i>3%</span>
+                  </div>
+                  <div class="kpi-value">7</div>
+                  <div class="kpi-label">Unread Messages</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="kpi-card">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="kpi-icon" style="background:var(--secondary);"><i class="bi bi-receipt"></i></div>
-                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>8%</span>
+          <div class="col-xl-4">
+            <div class="env-widget h-100 d-flex flex-column justify-content-center">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <i class="bi bi-globe-americas fs-1"></i>
+                <h5 class="mb-0 fw-bold">Environmental Impact</h5>
               </div>
-              <div class="kpi-value">56</div>
-              <div class="kpi-label">Active Work Orders</div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="kpi-card">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="kpi-icon" style="background:#2196F3;"><i class="bi bi-calendar-check"></i></div>
-                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>15%</span>
+              <div class="row g-3">
+                <div class="col-6">
+                  <p class="small opacity-75 mb-1">CO2 Sequestered</p>
+                  <p class="env-stat">8.4 Tons</p>
+                </div>
+                <div class="col-6">
+                  <p class="small opacity-75 mb-1">Oxygen Produced</p>
+                  <p class="env-stat">22.1 Tons</p>
+                </div>
+                <div class="col-6">
+                  <p class="small opacity-75 mb-1">Water Filtered</p>
+                  <p class="env-stat">45k Gal</p>
+                </div>
+                <div class="col-6">
+                  <p class="small opacity-75 mb-1">Energy Saved</p>
+                  <p class="env-stat">$1,240</p>
+                </div>
               </div>
-              <div class="kpi-value">18</div>
-              <div class="kpi-label">Upcoming Consultations</div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="kpi-card">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div class="kpi-icon" style="background:#E53935;"><i class="bi bi-chat-dots"></i></div>
-                <span class="kpi-change down"><i class="bi bi-arrow-down-short"></i>3%</span>
-              </div>
-              <div class="kpi-value">7</div>
-              <div class="kpi-label">Unread Messages</div>
+              <hr class="my-4 border-white-50">
+              <p class="small mb-0">Your managed trees offset the equivalent of <strong>14 cross-country flights</strong> this year.</p>
             </div>
           </div>
         </div>
@@ -163,88 +195,86 @@
         </div>
       </section>
 
-      <!-- USERS -->
-      <section id="users" class="mb-4">
+      <!-- TREE INVENTORY MANAGEMENT -->
+      <section id="inventory" class="mb-4">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h6 class="fw-bold mb-0"><i class="bi bi-people me-2 text-primary-custom"></i>Recent Users</h6>
-            <a href="#" class="btn btn-primary-custom btn-sm"><i class="bi bi-plus"></i> Add User</a>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <h6 class="fw-bold mb-1"><i class="bi bi-map me-2 text-primary-custom"></i>Property Tree Inventory</h6>
+              <p class="small text-muted mb-0">Live health monitoring and risk assessment for 342 mapped trees.</p>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-custom btn-sm"><i class="bi bi-download"></i> Export CSV</button>
+              <button class="btn btn-primary-custom btn-sm"><i class="bi bi-plus"></i> Register New Tree</button>
+            </div>
           </div>
-          <div class="table-responsive dash-table">
-            <table class="table">
-              <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr></thead>
-              <tbody>
-                <tr><td>Sarah Johnson</td><td>sarah@example.com</td><td>Property Manager</td><td><span class="badge-status badge-completed">Active</span></td></tr>
-                <tr><td>Mike Chen</td><td>mike@example.com</td><td>Arborist</td><td><span class="badge-status badge-completed">Active</span></td></tr>
-                <tr><td>Emily Davis</td><td>emily@example.com</td><td>Homeowner</td><td><span class="badge-status badge-pending">Pending</span></td></tr>
-                <tr><td>John Smith</td><td>john@example.com</td><td>Crew Lead</td><td><span class="badge-status badge-completed">Active</span></td></tr>
-                <tr><td>Lisa Brown</td><td>lisa@example.com</td><td>Homeowner</td><td><span class="badge-status badge-cancelled">Inactive</span></td></tr>
-              </tbody>
-            </table>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="p-3 border rounded-3 bg-light">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80" alt="Map Placeholder" class="img-fluid rounded-3 mb-3 w-100" style="height:200px;object-fit:cover;">
+                <p class="small text-center text-muted mb-0"><i class="bi bi-geo-alt"></i> Visual Map Overlay (Beta)</p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="table-responsive dash-table" style="max-height:240px;overflow-y:auto;">
+                <table class="table table-hover">
+                  <thead class="sticky-top bg-white"><tr><th>ID</th><th>Species</th><th>Height</th><th>Risk Level</th><th>Last Action</th></tr></thead>
+                  <tbody>
+                    <tr><td>#T-1201</td><td>White Oak</td><td>45ft</td><td><span class="badge bg-success-subtle text-success">Low</span></td><td>Pruned (2025)</td></tr>
+                    <tr><td>#T-1202</td><td>Red Maple</td><td>32ft</td><td><span class="badge bg-warning-subtle text-warning">Moderate</span></td><td>Health Check</td></tr>
+                    <tr><td>#T-1203</td><td>Norway Spruce</td><td>60ft</td><td><span class="badge bg-danger-subtle text-danger">High Alert</span></td><td>Cable Install</td></tr>
+                    <tr><td>#T-1204</td><td>River Birch</td><td>28ft</td><td><span class="badge bg-success-subtle text-success">Low</span></td><td>Fertilized</td></tr>
+                    <tr><td>#T-1205</td><td>Sugar Maple</td><td>38ft</td><td><span class="badge bg-success-subtle text-success">Low</span></td><td>Visual Check</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ORDERS TABLE -->
-      <section id="orders" class="mb-4">
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h6 class="fw-bold mb-0"><i class="bi bi-receipt me-2 text-secondary-custom"></i>Recent Work Orders</h6>
-            <a href="#" class="btn btn-secondary-custom btn-sm"><i class="bi bi-plus"></i> New Order</a>
-          </div>
-          <div class="table-responsive dash-table">
-            <table class="table">
-              <thead><tr><th>Order ID</th><th>Service</th><th>Property</th><th>Date</th><th>Status</th></tr></thead>
-              <tbody>
-                <tr><td>#WO-1041</td><td>Tree Trimming</td><td>123 Oak Ave</td><td>Mar 28, 2026</td><td><span class="badge-status badge-completed">Completed</span></td></tr>
-                <tr><td>#WO-1042</td><td>Emergency Cleanup</td><td>456 Pine Dr</td><td>Mar 27, 2026</td><td><span class="badge-status badge-progress">In Progress</span></td></tr>
-                <tr><td>#WO-1043</td><td>Health Assessment</td><td>789 Elm St</td><td>Mar 30, 2026</td><td><span class="badge-status badge-pending">Scheduled</span></td></tr>
-                <tr><td>#WO-1044</td><td>Stump Grinding</td><td>321 Maple Ln</td><td>Apr 02, 2026</td><td><span class="badge-status badge-pending">Scheduled</span></td></tr>
-                <tr><td>#WO-1045</td><td>Root Management</td><td>654 Cedar Ct</td><td>Mar 25, 2026</td><td><span class="badge-status badge-completed">Completed</span></td></tr>
-                <tr><td>#WO-1046</td><td>Tree Removal</td><td>987 Birch Way</td><td>Mar 26, 2026</td><td><span class="badge-status badge-cancelled">Cancelled</span></td></tr>
-              </tbody>
-            </table>
-          </div>
+      <!-- USERS & MESSAGES SPLIT -->
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <section id="users" class="mb-4">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;height:100%;">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold mb-0"><i class="bi bi-people me-2 text-primary-custom"></i>Team & Access</h6>
+                <a href="#" class="text-primary-custom small fw-bold">Manage Roles</a>
+              </div>
+              <div class="table-responsive dash-table">
+                <table class="table align-middle">
+                  <tbody>
+                    <tr><td><div class="d-flex align-items-center gap-3"><div style="width:32px;height:32px;border-radius:50%;background:#eee;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;">SJ</div><div><p class="mb-0 fw-bold small">Sarah Johnson</p><p class="text-muted mb-0" style="font-size:.7rem;">sarah@example.com</p></div></div></td><td><span class="badge bg-light text-dark small">Property Manager</span></td><td><span class="badge-status badge-completed">Active</span></td></tr>
+                    <tr><td><div class="d-flex align-items-center gap-3"><div style="width:32px;height:32px;border-radius:50%;background:#eee;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;">MC</div><div><p class="mb-0 fw-bold small">Mike Chen</p><p class="text-muted mb-0" style="font-size:.7rem;">mike@example.com</p></div></div></td><td><span class="badge bg-light text-dark small">Arborist</span></td><td><span class="badge-status badge-completed">Active</span></td></tr>
+                    <tr><td><div class="d-flex align-items-center gap-3"><div style="width:32px;height:32px;border-radius:50%;background:#eee;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;">ED</div><div><p class="mb-0 fw-bold small">Emily Davis</p><p class="text-muted mb-0" style="font-size:.7rem;">emily@example.com</p></div></div></td><td><span class="badge bg-light text-dark small">Homeowner</span></td><td><span class="badge-status badge-pending">Pending</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-
-      <!-- MESSAGES -->
-      <section id="messages" class="mb-4">
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
-          <div class="d-flex justify-content-between align-items-center p-3" style="border-bottom:1px solid var(--border);">
-            <h6 class="fw-bold mb-0"><i class="bi bi-chat-dots me-2 text-primary-custom"></i>Recent Messages</h6>
-            <a href="#" style="font-size:.9rem;font-weight:600;color:var(--primary);">View All</a>
-          </div>
-          <div class="message-item">
-            <div class="message-avatar">SJ</div>
-            <div class="message-content">
-              <div class="d-flex justify-content-between"><span class="message-sender">Sarah Johnson</span><span class="message-time">2 hrs ago</span></div>
-              <div class="message-preview">Tree health report for 123 Oak Ave is ready for review...</div>
+        <div class="col-lg-5">
+          <section id="messages" class="mb-4">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;height:100%;">
+              <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                <h6 class="fw-bold mb-0"><i class="bi bi-bell me-2 text-danger"></i>Alerts & Updates</h6>
+                <span class="badge bg-danger rounded-pill">3 New</span>
+              </div>
+              <div class="p-3">
+                <div class="alert alert-warning border-0 bg-warning-subtle py-2 d-flex align-items-center gap-3">
+                   <i class="bi bi-exclamation-triangle fs-4"></i>
+                   <div><p class="mb-0 fw-bold small">Scheduled Storm Prep</p><p class="mb-0 text-muted" style="font-size:.7rem;">High winds expected in 48h. Check tie-downs.</p></div>
+                </div>
+                <div class="alert alert-info border-0 bg-info-subtle py-2 d-flex align-items-center gap-3">
+                   <i class="bi bi-info-circle fs-4"></i>
+                   <div><p class="mb-0 fw-bold small">System Update</p><p class="mb-0 text-muted" style="font-size:.7rem;">Inventory syncing with LIDAR data complete.</p></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="message-item">
-            <div class="message-avatar" style="background:var(--secondary);">MC</div>
-            <div class="message-content">
-              <div class="d-flex justify-content-between"><span class="message-sender">Mike Chen</span><span class="message-time">5 hrs ago</span></div>
-              <div class="message-preview">Emergency cleanup at 456 Pine Dr completed. Photos attached...</div>
-            </div>
-          </div>
-          <div class="message-item">
-            <div class="message-avatar" style="background:var(--tertiary);">ED</div>
-            <div class="message-content">
-              <div class="d-flex justify-content-between"><span class="message-sender">Emily Davis</span><span class="message-time">1 day ago</span></div>
-              <div class="message-preview">Can we schedule a consultation for the maple trees on my property?</div>
-            </div>
-          </div>
-          <div class="message-item">
-            <div class="message-avatar" style="background:#2196F3;">JS</div>
-            <div class="message-content">
-              <div class="d-flex justify-content-between"><span class="message-sender">John Smith</span><span class="message-time">2 days ago</span></div>
-              <div class="message-preview">Crew schedule for next week has been updated. Please review...</div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <!-- SCHEDULE / HEALTH / WORK ORDERS -->
       <section id="schedule" class="mb-4">
