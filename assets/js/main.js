@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ---------- Active Nav Link ---------- */
-  const currentPage = window.location.pathname.split('/').pop() || 'home1.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link[data-page]').forEach(function (link) {
     if (link.getAttribute('data-page') === currentPage) {
       link.classList.add('active');
