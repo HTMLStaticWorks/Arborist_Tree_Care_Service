@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArborPro — Certified Arborist Services</title>
+  <meta name="description" content="ArborPro delivers certified arborist services. Schedule your consultation today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="home1.html"><i class="bi bi-tree"></i> ArborPro</a>
+      <button class="theme-toggle d-lg-none ms-auto me-2" id="themeToggleMobile" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu2"><i class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="home1.html" data-page="home1.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link active" href="home2.html" data-page="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-login">Login</a>
+          <a href="signup.html" class="btn btn-signup">Sign Up</a>
+          <button class="theme-toggle d-none d-lg-flex" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu2">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" style="font-family:var(--font-heading);color:var(--primary);"><i class="bi bi-tree me-2" style="color:var(--secondary)"></i>ArborPro</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li><a class="nav-link" href="home1.html">Home 1</a></li>
+        <li><a class="nav-link active" href="home2.html">Home 2</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <hr>
+      <div class="d-flex gap-2 mt-2">
+        <a href="login.html" class="btn btn-login flex-fill text-center">Login</a>
+        <a href="signup.html" class="btn btn-signup flex-fill text-center">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SPLIT -->
+  <section class="hero-split section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-split-content fade-in-up">
+          <span class="badge rounded-pill px-3 py-2 fw-semibold mb-3" style="background:rgba(27,94,32,.1);color:var(--primary);"><i class="bi bi-patch-check-fill me-1"></i> Trusted by 1,200+ Clients</span>
+          <h1>Your Trees Deserve <span>Certified Care</span></h1>
+          <p class="text-muted fs-5 mb-4">From root to canopy, our ISA-certified arborists provide comprehensive tree care backed by science, safety, and decades of experience.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="services.html" class="btn btn-primary-custom"><i class="bi bi-arrow-right-circle"></i> View Services</a>
+            <a href="#expertise" class="btn btn-outline-custom"><i class="bi bi-info-circle"></i> Our Expertise</a>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div class="hero-split-img" style="height:480px;position:relative;">
+            <img src="https://images.unsplash.com/photo-1446034295857-c899f4c4e003?auto=format&fit=crop&w=800&q=80" alt="Beautiful tree canopy">
+            <div style="position:absolute;bottom:20px;left:20px;background:var(--secondary);color:#fff;padding:16px 24px;border-radius:var(--radius);font-weight:600;"><i class="bi bi-shield-check me-2"></i> ISA Certified Experts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise" class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Expertise</span>
+        <h2 class="section-title mt-2">What Sets Us Apart</h2>
+        <p class="section-subtitle">Deep expertise across every aspect of arboriculture.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-tree"></i></div><h5 class="fw-bold">Arboriculture Science</h5><p class="text-muted mb-0">Latest research in tree biology and soil science in every care plan.</p></div></div>
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-tools"></i></div><h5 class="fw-bold">Advanced Equipment</h5><p class="text-muted mb-0">Aerial lifts to micro-injection systems — industry-leading technology.</p></div></div>
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-recycle"></i></div><h5 class="fw-bold">Sustainable Practices</h5><p class="text-muted mb-0">Zero-waste operations with mulching, composting, and eco-friendly treatments.</p></div></div>
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-clipboard-data"></i></div><h5 class="fw-bold">Detailed Reports</h5><p class="text-muted mb-0">Comprehensive health assessments and risk analysis for every tree.</p></div></div>
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-people"></i></div><h5 class="fw-bold">Expert Team</h5><p class="text-muted mb-0">25+ ISA-certified arborists with 200+ years combined experience.</p></div></div>
+        <div class="col-md-6 col-lg-4 fade-in-up"><div class="icon-card"><div class="icon-wrap"><i class="bi bi-geo-alt"></i></div><h5 class="fw-bold">Local Knowledge</h5><p class="text-muted mb-0">Deep understanding of regional species, pests, and climate.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Our Team</span>
+        <h2 class="section-title mt-2">Meet Our Certified Arborists</h2>
+        <p class="section-subtitle">Passionate professionals dedicated to tree health and beauty.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="icon-card text-center"><div style="width:90px;height:90px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem;font-weight:700;">DR</div><h5 class="fw-bold mb-1">Dr. Rachel Morgan</h5><small class="text-secondary-custom fw-semibold">Lead Arborist</small><p class="text-muted mt-2 mb-0" style="font-size:.9rem;">ISA Board Certified, 20+ years in urban forestry.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="icon-card text-center"><div style="width:90px;height:90px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem;font-weight:700;">MT</div><h5 class="fw-bold mb-1">Marcus Torres</h5><small class="text-secondary-custom fw-semibold">Senior Climber</small><p class="text-muted mt-2 mb-0" style="font-size:.9rem;">Specialist in large-tree removals and emergency ops.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="icon-card text-center"><div style="width:90px;height:90px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem;font-weight:700;">AP</div><h5 class="fw-bold mb-1">Amy Patel</h5><small class="text-secondary-custom fw-semibold">Plant Health Expert</small><p class="text-muted mt-2 mb-0" style="font-size:.9rem;">Pest management, disease control, and soil health.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="icon-card text-center"><div style="width:90px;height:90px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem;font-weight:700;">JC</div><h5 class="fw-bold mb-1">James Chen</h5><small class="text-secondary-custom fw-semibold">Landscape Designer</small><p class="text-muted mt-2 mb-0" style="font-size:.9rem;">Tree planting, landscape integration, canopy design.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS STEPS -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Our Process</span>
+        <h2 class="section-title mt-2">How We Work</h2>
+        <p class="section-subtitle">Simple, transparent process from consultation to completion.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="process-step"><div class="step-number">1</div><h5>Free Consultation</h5><p>No-obligation assessment of your trees and property needs.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="process-step"><div class="step-number">2</div><h5>Expert Assessment</h5><p>Certified arborists evaluate tree health, risks, and solutions.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="process-step"><div class="step-number">3</div><h5>Tailored Plan</h5><p>Customized care plan with transparent pricing and timelines.</p></div></div>
+        <div class="col-md-6 col-lg-3 fade-in-up"><div class="process-step"><div class="step-number">4</div><h5>Expert Execution</h5><p>Safety-first service with minimal disruption to your property.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Reviews</span>
+        <h2 class="section-title mt-2">Client Success Stories</h2>
+        <p class="section-subtitle">Property managers and homeowners share their experiences.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 fade-in-up">
+          <div class="testimonial-card">
+            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote">"Managing 50 properties, I need a partner I can trust. ArborPro's reports are thorough and their work is flawless."</p>
+            <div class="client-info"><div class="client-avatar">DW</div><div><div class="client-name">Daniel Wallace</div><div class="client-role">Commercial Property Manager</div></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div class="testimonial-card">
+            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote">"The disease management program saved dozens of mature elms on our campus. Scientific approach unmatched."</p>
+            <div class="client-info"><div class="client-avatar">LH</div><div><div class="client-name">Lisa Hernandez</div><div class="client-role">University Facilities Director</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-in-up">
+          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Safety & Science</span>
+          <h2 class="section-title mt-2">Safety Is Our <span class="text-secondary-custom">Top Priority</span></h2>
+          <p class="text-muted">Every ArborPro operation follows OSHA and ANSI A300 standards. Rigorous training ensures your property and our crew remain safe.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary-custom"></i> <strong>OSHA Compliant</strong> — federal safety regulations</li>
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary-custom"></i> <strong>ANSI A300</strong> — industry best practices</li>
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary-custom"></i> <strong>Monthly Training</strong> — safety drills & skills</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-primary-custom"></i> <strong>$5M Insurance</strong> — full liability coverage</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);height:400px;">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80" alt="Safety operations" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 fade-in-up">
+          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Get In Touch</span>
+          <h2 class="section-title mt-2">Schedule a Consultation</h2>
+          <p class="text-muted mb-4">Fill out the form and our team will contact you within 24 hours.</p>
+          <div class="d-flex align-items-center gap-3 mb-3"><i class="bi bi-telephone-fill text-primary-custom fs-5"></i><div><strong>Phone:</strong> 1-800-555-TREE</div></div>
+          <div class="d-flex align-items-center gap-3 mb-3"><i class="bi bi-envelope-fill text-primary-custom fs-5"></i><div><strong>Email:</strong> info@arborpro.com</div></div>
+          <div class="d-flex align-items-center gap-3"><i class="bi bi-geo-alt-fill text-primary-custom fs-5"></i><div><strong>Address:</strong> 123 Oak St, Green Valley, CA</div></div>
+        </div>
+        <div class="col-lg-7 fade-in-up">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;">
+            <form class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6"><label class="form-label fw-semibold">Full Name</label><input type="text" class="form-control" placeholder="John Doe"></div>
+                <div class="col-md-6"><label class="form-label fw-semibold">Phone</label><input type="tel" class="form-control" placeholder="(555) 123-4567"></div>
+                <div class="col-12"><label class="form-label fw-semibold">Email</label><input type="email" class="form-control" placeholder="john@example.com"></div>
+                <div class="col-12"><label class="form-label fw-semibold">Service</label><select class="form-select"><option selected disabled>Select a service...</option><option>Tree Trimming</option><option>Tree Removal</option><option>Stump Grinding</option><option>Emergency Cleanup</option><option>Health Assessment</option><option>Planting</option><option>Pest Management</option><option>Root Management</option></select></div>
+                <div class="col-12"><label class="form-label fw-semibold">Message</label><textarea class="form-control" rows="3" placeholder="Tell us about your trees..."></textarea></div>
+                <div class="col-12"><button type="submit" class="btn btn-primary-custom w-100"><i class="bi bi-send"></i> Request Consultation</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand"><i class="bi bi-tree"></i> ArborPro</div>
+          <p>Certified experts dedicated to preserving your trees with science-based solutions.</p>
+          <div class="social-icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+        </div>
+        <div class="col-lg-3 col-md-6"><h5>Company</h5><ul class="footer-links"><li><a href="#"><i class="bi bi-chevron-right"></i> About</a></li><li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Team</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5>Support</h5><ul class="footer-links"><li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Privacy</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Terms</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5>Newsletter</h5><p>Tree care tips and seasonal advice.</p><form class="newsletter-form"><div class="mb-2"><input type="email" class="form-control" placeholder="Your email"></div><button type="submit" class="btn btn-secondary-custom w-100"><i class="bi bi-send"></i> Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 ArborPro Tree Care Service. All rights reserved.</div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

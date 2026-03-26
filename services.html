@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArborPro — Our Services</title>
+  <meta name="description" content="Explore ArborPro's professional tree care services including trimming, removal, stump grinding, health assessments, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="home1.html"><i class="bi bi-tree"></i> ArborPro</a>
+      <button class="theme-toggle d-lg-none ms-auto me-2" id="themeToggleMobile" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuS"><i class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="home1.html" data-page="home1.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html" data-page="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-login">Login</a>
+          <a href="signup.html" class="btn btn-signup">Sign Up</a>
+          <button class="theme-toggle d-none d-lg-flex" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenuS">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" style="font-family:var(--font-heading);color:var(--primary);"><i class="bi bi-tree me-2" style="color:var(--secondary)"></i>ArborPro</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li><a class="nav-link" href="home1.html">Home 1</a></li>
+        <li><a class="nav-link" href="home2.html">Home 2</a></li>
+        <li><a class="nav-link active" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <hr>
+      <div class="d-flex gap-2 mt-2">
+        <a href="login.html" class="btn btn-login flex-fill text-center">Login</a>
+        <a href="signup.html" class="btn btn-signup flex-fill text-center">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1><i class="bi bi-tree me-2"></i> Our Services</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb"><li class="breadcrumb-item"><a href="home1.html">Home</a></li><li class="breadcrumb-item active">Services</li></ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5 fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Professional Tree Care</span>
+        <h2 class="section-title mt-2">Comprehensive Arborist Services</h2>
+        <p class="section-subtitle">From routine maintenance to emergency response, we cover every aspect of tree care.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=600&q=80" alt="Tree Trimming">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tree Trimming & Pruning</h5>
+              <p class="card-text">Precision pruning to enhance tree health, aesthetics, and structural integrity. ISA-standard techniques for all species.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="Tree Removal">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tree Removal</h5>
+              <p class="card-text">Safe, efficient removal of hazardous, dead, or unwanted trees using crane-assisted and rigging techniques.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Stump Grinding">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Stump Grinding</h5>
+              <p class="card-text">Complete stump removal with professional grinders. Reclaim your landscape and prevent pest infestations.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&w=600&q=80" alt="Emergency Storm Cleanup">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Emergency Storm Cleanup</h5>
+              <p class="card-text">24/7 rapid response for fallen trees, broken branches, and storm damage. Priority dispatch available.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Health Assessment">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tree Health Assessment</h5>
+              <p class="card-text">Comprehensive diagnostic evaluations including soil tests, resistograph analysis, and aerial inspections.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=600&q=80" alt="Planting">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Planting & Transplanting</h5>
+              <p class="card-text">Expert species selection, site prep, planting, and transplanting services for long-term tree success.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Pest Management">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Pest & Disease Management</h5>
+              <p class="card-text">Integrated pest management and disease treatment programs using eco-friendly methods.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="service-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=600&q=80" alt="Root Management">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Root Management</h5>
+              <p class="card-text">Root barrier installation, root pruning, and soil aeration to protect foundations and infrastructure.</p>
+              <a href="#" class="btn btn-primary-custom btn-sm mt-2"><i class="bi bi-arrow-right"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container position-relative" style="z-index:2;">
+      <h2>Need Professional Tree Care?</h2>
+      <p>Contact our certified arborists for a free, no-obligation consultation.</p>
+      <a href="signup.html" class="btn btn-secondary-custom btn-lg"><i class="bi bi-calendar-check"></i> Book Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand"><i class="bi bi-tree"></i> ArborPro</div>
+          <p>Certified experts dedicated to preserving your trees with science-based solutions.</p>
+          <div class="social-icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+        </div>
+        <div class="col-lg-3 col-md-6"><h5>Company</h5><ul class="footer-links"><li><a href="home1.html"><i class="bi bi-chevron-right"></i> About</a></li><li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Team</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5>Support</h5><ul class="footer-links"><li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Privacy</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Terms</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5>Newsletter</h5><p>Tree care tips and seasonal advice.</p><form class="newsletter-form"><div class="mb-2"><input type="email" class="form-control" placeholder="Your email"></div><button type="submit" class="btn btn-secondary-custom w-100"><i class="bi bi-send"></i> Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 ArborPro Tree Care Service. All rights reserved.</div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

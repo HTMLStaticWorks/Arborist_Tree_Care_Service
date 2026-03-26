@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArborPro — Dashboard</title>
+  <meta name="description" content="ArborPro property manager dashboard. Schedule consultations, manage tree health reports, and track work orders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
+    <div class="sidebar-brand"><i class="bi bi-tree"></i> ArborPro</div>
+    <ul class="sidebar-nav">
+      <li class="nav-label">Main</li>
+      <li><a href="#analytics" class="active"><i class="bi bi-grid-1x2"></i> Dashboard</a></li>
+      <li><a href="#analytics"><i class="bi bi-bar-chart-line"></i> Analytics</a></li>
+      <li class="nav-label">Management</li>
+      <li><a href="#users"><i class="bi bi-people"></i> Users</a></li>
+      <li><a href="#orders"><i class="bi bi-receipt"></i> Work Orders</a></li>
+      <li><a href="#messages"><i class="bi bi-chat-dots"></i> Messages</a></li>
+      <li class="nav-label">Tree Care</li>
+      <li><a href="#schedule"><i class="bi bi-calendar-check"></i> Schedule Consultation</a></li>
+      <li><a href="#health"><i class="bi bi-heart-pulse"></i> Health Reports</a></li>
+      <li><a href="#workorders"><i class="bi bi-clipboard-check"></i> Track Work Orders</a></li>
+      <li class="nav-label">Account</li>
+      <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
+      <li><a href="home1.html"><i class="bi bi-box-arrow-left"></i> Back to Site</a></li>
+    </ul>
+  </aside>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- MAIN -->
+  <div class="dashboard-main">
+    <!-- TOPBAR -->
+    <div class="dashboard-topbar">
+      <div class="d-flex align-items-center gap-3">
+        <button class="menu-toggle" id="menuToggle"><i class="bi bi-list"></i></button>
+        <h5 class="mb-0 fw-bold" style="font-family:var(--font-heading);">Dashboard</h5>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        <div class="d-flex align-items-center gap-2">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;">PM</div>
+          <span class="fw-semibold d-none d-md-inline" style="font-size:.9rem;">Property Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <!-- KPI CARDS -->
+      <section id="analytics" class="mb-4">
+        <div class="row g-3">
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="kpi-icon" style="background:var(--primary);"><i class="bi bi-tree"></i></div>
+                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>12%</span>
+              </div>
+              <div class="kpi-value">342</div>
+              <div class="kpi-label">Trees Managed</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="kpi-icon" style="background:var(--secondary);"><i class="bi bi-receipt"></i></div>
+                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>8%</span>
+              </div>
+              <div class="kpi-value">56</div>
+              <div class="kpi-label">Active Work Orders</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="kpi-icon" style="background:#2196F3;"><i class="bi bi-calendar-check"></i></div>
+                <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>15%</span>
+              </div>
+              <div class="kpi-value">18</div>
+              <div class="kpi-label">Upcoming Consultations</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="kpi-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="kpi-icon" style="background:#E53935;"><i class="bi bi-chat-dots"></i></div>
+                <span class="kpi-change down"><i class="bi bi-arrow-down-short"></i>3%</span>
+              </div>
+              <div class="kpi-value">7</div>
+              <div class="kpi-label">Unread Messages</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANALYTICS CHARTS ROW -->
+      <section class="mb-4">
+        <div class="row g-3">
+          <div class="col-lg-8">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+              <h6 class="fw-bold mb-3"><i class="bi bi-bar-chart-line me-2 text-primary-custom"></i>Work Order Trends</h6>
+              <div style="display:flex;gap:8px;align-items:flex-end;height:200px;padding-top:20px;">
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:60%;"></div><small class="text-muted" style="font-size:.7rem;">Jan</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:75%;"></div><small class="text-muted" style="font-size:.7rem;">Feb</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:45%;"></div><small class="text-muted" style="font-size:.7rem;">Mar</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:90%;"></div><small class="text-muted" style="font-size:.7rem;">Apr</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--secondary);border-radius:4px 4px 0 0;height:100%;"></div><small class="text-muted" style="font-size:.7rem;">May</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:70%;"></div><small class="text-muted" style="font-size:.7rem;">Jun</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:55%;"></div><small class="text-muted" style="font-size:.7rem;">Jul</small>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:80%;"></div><small class="text-muted" style="font-size:.7rem;">Aug</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;height:100%;">
+              <h6 class="fw-bold mb-3"><i class="bi bi-pie-chart me-2 text-secondary-custom"></i>Service Distribution</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex justify-content-between align-items-center mb-3">
+                  <span><span style="width:10px;height:10px;border-radius:50%;background:var(--primary);display:inline-block;margin-right:8px;"></span>Trimming</span>
+                  <strong>35%</strong>
+                </li>
+                <li class="d-flex justify-content-between align-items-center mb-3">
+                  <span><span style="width:10px;height:10px;border-radius:50%;background:var(--secondary);display:inline-block;margin-right:8px;"></span>Removal</span>
+                  <strong>22%</strong>
+                </li>
+                <li class="d-flex justify-content-between align-items-center mb-3">
+                  <span><span style="width:10px;height:10px;border-radius:50%;background:#2196F3;display:inline-block;margin-right:8px;"></span>Health Check</span>
+                  <strong>18%</strong>
+                </li>
+                <li class="d-flex justify-content-between align-items-center mb-3">
+                  <span><span style="width:10px;height:10px;border-radius:50%;background:var(--tertiary);display:inline-block;margin-right:8px;"></span>Emergency</span>
+                  <strong>15%</strong>
+                </li>
+                <li class="d-flex justify-content-between align-items-center">
+                  <span><span style="width:10px;height:10px;border-radius:50%;background:#66BB6A;display:inline-block;margin-right:8px;"></span>Planting</span>
+                  <strong>10%</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USERS -->
+      <section id="users" class="mb-4">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="fw-bold mb-0"><i class="bi bi-people me-2 text-primary-custom"></i>Recent Users</h6>
+            <a href="#" class="btn btn-primary-custom btn-sm"><i class="bi bi-plus"></i> Add User</a>
+          </div>
+          <div class="table-responsive dash-table">
+            <table class="table">
+              <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Sarah Johnson</td><td>sarah@example.com</td><td>Property Manager</td><td><span class="badge-status badge-completed">Active</span></td></tr>
+                <tr><td>Mike Chen</td><td>mike@example.com</td><td>Arborist</td><td><span class="badge-status badge-completed">Active</span></td></tr>
+                <tr><td>Emily Davis</td><td>emily@example.com</td><td>Homeowner</td><td><span class="badge-status badge-pending">Pending</span></td></tr>
+                <tr><td>John Smith</td><td>john@example.com</td><td>Crew Lead</td><td><span class="badge-status badge-completed">Active</span></td></tr>
+                <tr><td>Lisa Brown</td><td>lisa@example.com</td><td>Homeowner</td><td><span class="badge-status badge-cancelled">Inactive</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORDERS TABLE -->
+      <section id="orders" class="mb-4">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="fw-bold mb-0"><i class="bi bi-receipt me-2 text-secondary-custom"></i>Recent Work Orders</h6>
+            <a href="#" class="btn btn-secondary-custom btn-sm"><i class="bi bi-plus"></i> New Order</a>
+          </div>
+          <div class="table-responsive dash-table">
+            <table class="table">
+              <thead><tr><th>Order ID</th><th>Service</th><th>Property</th><th>Date</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>#WO-1041</td><td>Tree Trimming</td><td>123 Oak Ave</td><td>Mar 28, 2026</td><td><span class="badge-status badge-completed">Completed</span></td></tr>
+                <tr><td>#WO-1042</td><td>Emergency Cleanup</td><td>456 Pine Dr</td><td>Mar 27, 2026</td><td><span class="badge-status badge-progress">In Progress</span></td></tr>
+                <tr><td>#WO-1043</td><td>Health Assessment</td><td>789 Elm St</td><td>Mar 30, 2026</td><td><span class="badge-status badge-pending">Scheduled</span></td></tr>
+                <tr><td>#WO-1044</td><td>Stump Grinding</td><td>321 Maple Ln</td><td>Apr 02, 2026</td><td><span class="badge-status badge-pending">Scheduled</span></td></tr>
+                <tr><td>#WO-1045</td><td>Root Management</td><td>654 Cedar Ct</td><td>Mar 25, 2026</td><td><span class="badge-status badge-completed">Completed</span></td></tr>
+                <tr><td>#WO-1046</td><td>Tree Removal</td><td>987 Birch Way</td><td>Mar 26, 2026</td><td><span class="badge-status badge-cancelled">Cancelled</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- MESSAGES -->
+      <section id="messages" class="mb-4">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <div class="d-flex justify-content-between align-items-center p-3" style="border-bottom:1px solid var(--border);">
+            <h6 class="fw-bold mb-0"><i class="bi bi-chat-dots me-2 text-primary-custom"></i>Recent Messages</h6>
+            <a href="#" style="font-size:.9rem;font-weight:600;color:var(--primary);">View All</a>
+          </div>
+          <div class="message-item">
+            <div class="message-avatar">SJ</div>
+            <div class="message-content">
+              <div class="d-flex justify-content-between"><span class="message-sender">Sarah Johnson</span><span class="message-time">2 hrs ago</span></div>
+              <div class="message-preview">Tree health report for 123 Oak Ave is ready for review...</div>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-avatar" style="background:var(--secondary);">MC</div>
+            <div class="message-content">
+              <div class="d-flex justify-content-between"><span class="message-sender">Mike Chen</span><span class="message-time">5 hrs ago</span></div>
+              <div class="message-preview">Emergency cleanup at 456 Pine Dr completed. Photos attached...</div>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-avatar" style="background:var(--tertiary);">ED</div>
+            <div class="message-content">
+              <div class="d-flex justify-content-between"><span class="message-sender">Emily Davis</span><span class="message-time">1 day ago</span></div>
+              <div class="message-preview">Can we schedule a consultation for the maple trees on my property?</div>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-avatar" style="background:#2196F3;">JS</div>
+            <div class="message-content">
+              <div class="d-flex justify-content-between"><span class="message-sender">John Smith</span><span class="message-time">2 days ago</span></div>
+              <div class="message-preview">Crew schedule for next week has been updated. Please review...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCHEDULE / HEALTH / WORK ORDERS -->
+      <section id="schedule" class="mb-4">
+        <div class="row g-3">
+          <div class="col-lg-6">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+              <h6 class="fw-bold mb-3"><i class="bi bi-calendar-check me-2 text-primary-custom"></i>Schedule Consultation</h6>
+              <form class="contact-form">
+                <div class="mb-3"><label class="form-label fw-semibold">Property Address</label><input type="text" class="form-control" placeholder="123 Oak Street"></div>
+                <div class="mb-3"><label class="form-label fw-semibold">Preferred Date</label><input type="date" class="form-control"></div>
+                <div class="mb-3"><label class="form-label fw-semibold">Service Type</label>
+                  <select class="form-select"><option selected disabled>Select...</option><option>Tree Trimming</option><option>Tree Removal</option><option>Health Assessment</option><option>Emergency</option><option>Planting</option><option>Pest Management</option></select>
+                </div>
+                <div class="mb-3"><label class="form-label fw-semibold">Notes</label><textarea class="form-control" rows="2" placeholder="Any details..."></textarea></div>
+                <button type="submit" class="btn btn-primary-custom w-100 justify-content-center"><i class="bi bi-calendar-plus"></i> Schedule</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6" id="health">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+              <h6 class="fw-bold mb-3"><i class="bi bi-heart-pulse me-2 text-secondary-custom"></i>Tree Health Reports</h6>
+              <div class="table-responsive dash-table">
+                <table class="table">
+                  <thead><tr><th>Tree ID</th><th>Species</th><th>Health</th><th>Last Check</th></tr></thead>
+                  <tbody>
+                    <tr><td>#T-001</td><td>Red Oak</td><td><span class="badge-status badge-completed">Healthy</span></td><td>Mar 20</td></tr>
+                    <tr><td>#T-002</td><td>Sugar Maple</td><td><span class="badge-status badge-pending">Fair</span></td><td>Mar 18</td></tr>
+                    <tr><td>#T-003</td><td>White Pine</td><td><span class="badge-status badge-cancelled">Poor</span></td><td>Mar 15</td></tr>
+                    <tr><td>#T-004</td><td>American Elm</td><td><span class="badge-status badge-completed">Healthy</span></td><td>Mar 22</td></tr>
+                    <tr><td>#T-005</td><td>Blue Spruce</td><td><span class="badge-status badge-progress">Treatment</span></td><td>Mar 19</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

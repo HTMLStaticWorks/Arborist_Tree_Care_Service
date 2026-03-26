@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArborPro — Login</title>
+  <meta name="description" content="Login to your ArborPro account to manage tree care services and consultations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="home1.html"><i class="bi bi-tree"></i> ArborPro</a>
+      <button class="theme-toggle d-lg-none ms-auto me-2" id="themeToggleMobile" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenuL"><i class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="home1.html" data-page="home1.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-login">Login</a>
+          <a href="signup.html" class="btn btn-signup">Sign Up</a>
+          <button class="theme-toggle d-none d-lg-flex" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenuL">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" style="font-family:var(--font-heading);color:var(--primary);"><i class="bi bi-tree me-2" style="color:var(--secondary)"></i>ArborPro</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li><a class="nav-link" href="home1.html">Home 1</a></li>
+        <li><a class="nav-link" href="home2.html">Home 2</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <hr>
+      <div class="d-flex gap-2 mt-2">
+        <a href="login.html" class="btn btn-login flex-fill text-center">Login</a>
+        <a href="signup.html" class="btn btn-signup flex-fill text-center">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN FORM -->
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="text-center mb-2">
+        <i class="bi bi-tree fs-1" style="color:var(--primary)"></i>
+      </div>
+      <h2 class="text-center">Welcome Back</h2>
+      <p class="auth-subtitle text-center">Sign in to your ArborPro account</p>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <div class="position-relative">
+            <input type="email" class="form-control" placeholder="you@example.com" id="loginEmail">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <div class="input-group">
+            <input type="password" class="form-control" placeholder="Enter your password" id="loginPassword">
+            <button class="btn border password-toggle" type="button" style="border-color:var(--border);"><i class="bi bi-eye"></i></button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe" style="font-size:.9rem;">Remember me</label>
+          </div>
+          <a href="#" style="font-size:.9rem;color:var(--primary);font-weight:500;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary-custom w-100 justify-content-center">
+          <i class="bi bi-box-arrow-in-right"></i> Login
+        </button>
+      </form>
+      <div class="divider"><span>or continue with</span></div>
+      <div class="social-login">
+        <a href="#" title="Google"><i class="bi bi-google"></i></a>
+        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" title="Apple"><i class="bi bi-apple"></i></a>
+        <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+      </div>
+      <p class="text-center mt-4 mb-0" style="font-size:.95rem;">
+        Don't have an account? <a href="signup.html" class="fw-semibold" style="color:var(--primary);">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
