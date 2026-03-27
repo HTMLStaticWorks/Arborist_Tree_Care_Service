@@ -35,9 +35,10 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html" data-page="index.html">Home 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html" data-page="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-page="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
         </ul>
         <div class="d-flex align-items-center gap-2">
@@ -61,9 +62,10 @@
     </div>
     <div class="offcanvas-body">
       <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
-        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
       <hr>
@@ -77,10 +79,6 @@
   <!-- ========== HERO SECTION ========== -->
   <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1600&q=80');">
     <div class="hero-overlay"></div>
-    <!-- Floating Leaves -->
-    <i class="bi bi-feather floating-leaf" style="position:absolute;top:15%;left:10%;font-size:4rem;color:#fff;"></i>
-    <i class="bi bi-feather floating-leaf" style="position:absolute;top:40%;right:15%;font-size:3rem;color:#fff;"></i>
-    <i class="bi bi-feather floating-leaf" style="position:absolute;bottom:20%;left:30%;font-size:3.5rem;color:#fff;"></i>
     <div class="container hero-content">
       <div class="row">
         <div class="col-lg-7">
@@ -93,8 +91,8 @@
             <a href="services.html" class="btn btn-secondary-custom btn-lg">
               <i class="bi bi-shield-check"></i> View Our Services
             </a>
-            <a href="#projects" class="btn btn-outline-custom btn-lg" style="color:#fff;border-color:rgba(255,255,255,.4);">
-              <i class="bi bi-images"></i> Recent Projects
+            <a href="#about" class="btn btn-outline-custom btn-lg" style="color:#fff;border-color:rgba(255,255,255,.4);">
+              <i class="bi bi-info-circle"></i> Learn Our Method
             </a>
           </div>
           <div class="d-flex gap-5 mt-5">
@@ -107,73 +105,41 @@
     </div>
   </section>
 
-  <!-- ========== LOGO STRIP ========== -->
-  <section class="logo-strip">
-    <div class="container">
-      <div class="logo-items">
-        <div class="text-center"><i class="bi bi-award"></i><br><small class="fw-bold">ISA MEMBER</small></div>
-        <div class="text-center"><i class="bi bi-shield-shaded"></i><br><small class="fw-bold">TCIA ACCREDITED</small></div>
-        <div class="text-center"><i class="bi bi-brightness-high"></i><br><small class="fw-bold">ECO-CERTIFIED</small></div>
-        <div class="text-center"><i class="bi bi-check-circle"></i><br><small class="fw-bold">OSHA COMPLIANT</small></div>
-        <div class="text-center"><i class="bi bi-tree-fill"></i><br><small class="fw-bold">CANOPY TRUST</small></div>
-      </div>
-    </div>
-  </section>
-
   <!-- ========== ABOUT SECTION ========== -->
   <section id="about" class="section-padding">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 fade-in-up">
-          <div style="position:relative;">
-            <div style="width:100%;height:420px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);">
-              <img src="https://images.unsplash.com/photo-1588392382834-a891154bca4d?auto=format&fit=crop&w=800&q=80" alt="Arborist at work" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div style="position:absolute;bottom:-20px;right:-20px;background:var(--primary);color:#fff;padding:24px;border-radius:var(--radius);text-align:center;box-shadow:var(--card-shadow);">
-              <span style="font-family:var(--font-heading);font-size:2rem;font-weight:800;">15+</span><br>
-              <small>Years of Excellence</small>
-            </div>
+          <div class="about-image-grid d-none d-md-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?auto=format&fit=crop&w=400&q=80" alt="Pruning" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover">
+            <img src="https://images.unsplash.com/photo-1588880331079-f9d939391b40?auto=format&fit=crop&w=400&q=80" alt="Health check" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover mt-4">
           </div>
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?auto=format&fit=crop&w=800&q=80" alt="Mobile about" class="img-fluid rounded-4 shadow-sm d-md-none">
         </div>
         <div class="col-lg-6 fade-in-up">
-          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">About ArborPro</span>
-          <h2 class="section-title mt-2">The Science of Tree Care, Delivered with <span class="text-secondary-custom">Passion</span></h2>
-          <p class="text-muted">ArborPro brings together certified arborists, cutting-edge equipment, and a deep love for nature. We believe every tree tells a story — and it's our job to help them thrive for generations.</p>
-          <div class="row g-3 mt-3">
-            <div class="col-6">
-              <div class="d-flex align-items-start gap-3">
-                <div style="width:42px;height:42px;border-radius:50%;background:rgba(27,94,32,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <i class="bi bi-shield-check text-primary-custom"></i>
+          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 0.85rem;">The ArborPro Mission</span>
+          <h2 class="section-title mt-2">Pioneering Scientific <span class="text-primary">Tree Preservation</span></h2>
+          <p class="lead mb-4">We are more than a tree removal service. We are environmental stewards committed to the longevity of your landscape's most valuable assets.</p>
+          <p class="mb-4">With over 15 years of certified expertise, our team utilizes advanced diagnostic tools to ensure the health and safety of your trees for generations to come. Our "Health First" philosophy focuses on preservation over removal whenever possible.</p>
+          <div class="row g-4 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-sm bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                  <i class="bi bi-patch-check"></i>
                 </div>
-                <div><h6 class="mb-1 fw-bold">Fully Insured</h6><small class="text-muted">Complete liability coverage</small></div>
+                <h6 class="mb-0 fw-bold">ISA Master Arborists</h6>
               </div>
             </div>
-            <div class="col-6">
-              <div class="d-flex align-items-start gap-3">
-                <div style="width:42px;height:42px;border-radius:50%;background:rgba(27,94,32,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <i class="bi bi-trophy text-primary-custom"></i>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-sm bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                  <i class="bi bi-shield-check"></i>
                 </div>
-                <div><h6 class="mb-1 fw-bold">ISA Certified</h6><small class="text-muted">Industry gold standard</small></div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="d-flex align-items-start gap-3">
-                <div style="width:42px;height:42px;border-radius:50%;background:rgba(27,94,32,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <i class="bi bi-clock text-primary-custom"></i>
-                </div>
-                <div><h6 class="mb-1 fw-bold">24/7 Emergency</h6><small class="text-muted">Storm response ready</small></div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="d-flex align-items-start gap-3">
-                <div style="width:42px;height:42px;border-radius:50%;background:rgba(27,94,32,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <i class="bi bi-leaf text-primary-custom"></i>
-                </div>
-                <div><h6 class="mb-1 fw-bold">Eco-Friendly</h6><small class="text-muted">Sustainable practices</small></div>
+                <h6 class="mb-0 fw-bold">Fully Insured & Bonded</h6>
               </div>
             </div>
           </div>
-          <a href="services.html" class="btn btn-primary-custom mt-4"><i class="bi bi-arrow-right"></i> Explore Services</a>
+          <a href="about.html" class="btn btn-primary-custom px-4 py-2 rounded-pill">Learn Our History</a>
         </div>
       </div>
     </div>
@@ -187,297 +153,71 @@
         <h2 class="section-title mt-2">Our Professional Services</h2>
         <p class="section-subtitle">Comprehensive tree care solutions backed by science and delivered by certified experts.</p>
       </div>
-      <div class="row g-4">
+      <div class="row g-4 mt-2">
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-scissors"></i></div>
+          <div class="icon-card text-center p-4 h-100 shadow-sm rounded-4" style="background:#fff;">
+            <div class="icon-wrap mx-auto mb-3" style="font-size: 2.5rem; color: var(--primary);"><i class="bi bi-scissors"></i></div>
             <h5 class="fw-bold">Tree Trimming</h5>
-            <p class="text-muted mb-0">Precision pruning to enhance tree health, aesthetics, and safety.</p>
+            <p class="text-muted small mb-0">Precision pruning to enhance tree health, aesthetics, and safety.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-x-octagon"></i></div>
+          <div class="icon-card text-center p-4 h-100 shadow-sm rounded-4" style="background:#fff;">
+            <div class="icon-wrap mx-auto mb-3" style="font-size: 2.5rem; color: var(--primary);"><i class="bi bi-x-octagon"></i></div>
             <h5 class="fw-bold">Tree Removal</h5>
-            <p class="text-muted mb-0">Safe removal of hazardous, dead, or unwanted trees.</p>
+            <p class="text-muted small mb-0">Safe removal of hazardous, dead, or unwanted trees.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-gear-wide-connected"></i></div>
-            <h5 class="fw-bold">Stump Grinding</h5>
-            <p class="text-muted mb-0">Complete stump removal to reclaim your landscape.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-lightning"></i></div>
-            <h5 class="fw-bold">Emergency Cleanup</h5>
-            <p class="text-muted mb-0">Rapid response for storm damage and fallen trees.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-heart-pulse"></i></div>
+          <div class="icon-card text-center p-4 h-100 shadow-sm rounded-4" style="background:#fff;">
+            <div class="icon-wrap mx-auto mb-3" style="font-size: 2.5rem; color: var(--primary);"><i class="bi bi-heart-pulse"></i></div>
             <h5 class="fw-bold">Health Assessment</h5>
-            <p class="text-muted mb-0">Diagnostic evaluations to detect diseases early.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card">
-            <div class="icon-wrap"><i class="bi bi-flower1"></i></div>
-            <h5 class="fw-bold">Planting Services</h5>
-            <p class="text-muted mb-0">Expert planting and transplanting for lasting growth.</p>
+            <p class="text-muted small mb-0">Diagnostic evaluations to detect diseases and pests early.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== RECENT PROJECTS (Case Studies) ========== -->
-  <section id="projects" class="section-padding bg-alt">
-    <div class="container">
-      <div class="text-center mb-5 fade-in-up">
-        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Portfolio</span>
-        <h2 class="section-title mt-2">Recent Success Stories</h2>
-        <p class="section-subtitle">Real-world examples of how we preserve and protect our urban forests.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="case-card">
-            <div class="case-img">
-              <span class="case-tag">Preservation</span>
-              <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80" alt="Oak Preservation">
-            </div>
-            <div class="p-4">
-              <h5 class="fw-bold">Historic Oak Restoration</h5>
-              <p class="text-muted small">Restored a 200-year-old Heritage Oak using root zone aeration and systemic health treatments.</p>
-              <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-light text-dark">Residential</span>
-                <a href="#" class="text-primary-custom fw-bold small">Read Case Study <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="case-card">
-            <div class="case-img">
-              <span class="case-tag">Emergency</span>
-              <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=600&q=80" alt="Storm Cleanup">
-            </div>
-            <div class="p-4">
-              <h5 class="fw-bold">Post-Storm Rapid Response</h5>
-              <p class="text-muted small">Cleared 15 fallen trees in a commercial business park within 24 hours of a Level 2 Hurricane.</p>
-              <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-light text-dark">Commercial</span>
-                <a href="#" class="text-primary-custom fw-bold small">Read Case Study <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="case-card">
-            <div class="case-img">
-              <span class="case-tag">Planting</span>
-              <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e4?auto=format&fit=crop&w=600&q=80" alt="Urban Canopy">
-            </div>
-            <div class="p-4">
-              <h5 class="fw-bold">Urban Canopy Enhancement</h5>
-              <p class="text-muted small">Planted 50 native species across a new municipal park to ensure 40% canopy coverage by 2035.</p>
-              <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-light text-dark">Municipal</span>
-                <a href="#" class="text-primary-custom fw-bold small">Read Case Study <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FAQ SECTION ========== -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5 fade-in-up">
-          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Got Questions?</span>
-          <h2 class="section-title mt-2">Frequently Asked <span class="text-secondary-custom">Questions</span></h2>
-          <p class="text-muted">We believe in transparent communication. If you don't find your answer here, feel free to reach out to our team.</p>
-          <a href="#contact" class="btn btn-outline-custom mt-3">Ask a Different Question</a>
-        </div>
-        <div class="col-lg-7 fade-in-up">
-          <div class="faq-accordion">
-            <div class="faq-item">
-              <div class="faq-question">When is the best time to prune my trees? <i class="bi bi-plus-lg"></i></div>
-              <div class="faq-answer">While most trees can be pruned year-round, the dormant season (late winter) is generally best for the health of the tree as it minimizes stress and reduces the risk of pest infestation.</div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">Are you fully insured for hazardous removals? <i class="bi bi-plus-lg"></i></div>
-              <div class="faq-answer">Yes, ArborPro carries $5M in general liability insurance and comprehensive worker's compensation. We provide certificates of insurance upon request for every project.</div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">How do I know if my tree is diseased? <i class="bi bi-plus-lg"></i></div>
-              <div class="faq-answer">Look for signs like leaf discoloration, premature leaf drop, fungus growth on the bark, or dead branches. Our certified arborists can provide a professional diagnostic assessment.</div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question">Do you offer stump removal with tree removal? <i class="bi bi-plus-lg"></i></div>
-              <div class="faq-answer">Stump grinding is a separate service, but we often bundle it with tree removal. We can grind stumps to 6-12 inches below grade, allowing you to replant or turf the area.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== BLOG / TIPS SECTION ========== -->
-  <section class="section-padding bg-alt">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-5 fade-in-up">
-        <div>
-          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Insights</span>
-          <h2 class="section-title mt-2">Tree Care Tips & News</h2>
-        </div>
-        <a href="#" class="btn btn-primary-custom d-none d-md-flex">View All Articles</a>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1520121401995-928cd50d4e27?auto=format&fit=crop&w=600&q=80" alt="Spring Pruning">
-            </div>
-            <div class="card-body">
-              <div class="blog-meta">
-                <span><i class="bi bi-calendar3"></i> Mar 15, 2026</span>
-                <span><i class="bi bi-person"></i> Dr. Morgan</span>
-              </div>
-              <h5 class="fw-bold">5 Signs Your Trees Need Spring Pruning</h5>
-              <p class="text-muted small">Prepare your landscape for the growing season with these essential maintenance tips for healthy growth.</p>
-              <a href="#" class="btn btn-link text-primary-custom p-0 fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=600&q=80" alt="Oak Disease">
-            </div>
-            <div class="card-body">
-              <div class="blog-meta">
-                <span><i class="bi bi-calendar3"></i> Mar 10, 2026</span>
-                <span><i class="bi bi-person"></i> Amy Patel</span>
-              </div>
-              <h5 class="fw-bold">Identifying Oak Wilt in Early Stages</h5>
-              <p class="text-muted small">Oak wilt can be devastating. Learn how to spot the early warning signs and protect your heritage trees.</p>
-              <a href="#" class="btn btn-link text-primary-custom p-0 fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 fade-in-up">
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80" alt="Soil Health">
-            </div>
-            <div class="card-body">
-              <div class="blog-meta">
-                <span><i class="bi bi-calendar3"></i> Mar 05, 2026</span>
-                <span><i class="bi bi-person"></i> James Chen</span>
-              </div>
-              <h5 class="fw-bold">The Importance of Soil pH for Tree Health</h5>
-              <p class="text-muted small">Often overlooked, soil chemistry plays a vital role in nutrient absorption and overall tree vigor.</p>
-              <a href="#" class="btn btn-link text-primary-custom p-0 fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn btn-outline-primary-custom rounded-pill px-5">View All Services</a>
       </div>
     </div>
   </section>
 
   <!-- ========== TESTIMONIALS ========== -->
-  <section class="section-padding bg-alt">
+  <section class="section-padding">
     <div class="container">
-      <div class="text-center fade-in-up">
+      <div class="text-center fade-in-up mb-5">
         <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Testimonials</span>
         <h2 class="section-title mt-2">What Our Clients Say</h2>
-        <p class="section-subtitle">Real stories from property owners who trust ArborPro.</p>
       </div>
       <div class="row g-4">
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="testimonial-card">
-            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote">"ArborPro transformed our property. Their team of certified arborists assessed every tree and provided a comprehensive care plan. Absolutely professional!"</p>
-            <div class="client-info">
-              <div class="client-avatar">JD</div>
-              <div>
-                <div class="client-name">James Davidson</div>
-                <div class="client-role">Property Manager</div>
-              </div>
+          <div class="testimonial-card p-4 border rounded-4 shadow-sm h-100">
+            <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote mb-4">"ArborPro transformed our property. Their team of certified arborists assessed every tree and provided a comprehensive care plan."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">JD</div>
+              <div><h6 class="mb-0 fw-bold">James Davidson</h6><small class="text-muted">Property Manager</small></div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="testimonial-card">
-            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote">"After a fierce storm, ArborPro responded within hours. They cleared the fallen trees safely and even saved the old oak in our yard. Lifesavers!"</p>
-            <div class="client-info">
-              <div class="client-avatar">SM</div>
-              <div>
-                <div class="client-name">Sarah Mitchell</div>
-                <div class="client-role">Homeowner</div>
-              </div>
+          <div class="testimonial-card p-4 border rounded-4 shadow-sm h-100">
+            <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote mb-4">"After a fierce storm, ArborPro responded within hours. They cleared the fallen trees safely and saved the old oak."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">SM</div>
+              <div><h6 class="mb-0 fw-bold">Sarah Mitchell</h6><small class="text-muted">Homeowner</small></div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="testimonial-card">
-            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
-            <p class="quote">"We've been working with ArborPro for three years now. Their health assessments helped us save several trees that other companies wanted to remove."</p>
-            <div class="client-info">
-              <div class="client-avatar">RK</div>
-              <div>
-                <div class="client-name">Robert Kim</div>
-                <div class="client-role">HOA President</div>
-              </div>
+          <div class="testimonial-card p-4 border rounded-4 shadow-sm h-100">
+            <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="quote mb-4">"Professional, scientific, and efficient. They saved several trees that other companies wanted to remove. Highly recommend!"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">RK</div>
+              <div><h6 class="mb-0 fw-bold">Robert Kim</h6><small class="text-muted">HOA President</small></div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== GALLERY ========== -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="text-center fade-in-up">
-        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Our Work</span>
-        <h2 class="section-title mt-2">Project Gallery</h2>
-        <p class="section-subtitle">Before & after transformations that showcase our expertise.</p>
-      </div>
-      <div class="row g-3">
-        <div class="col-6 col-lg-3 fade-in-up">
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80" alt="Tree care project">
-            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3 fade-in-up">
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Tree trimming">
-            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3 fade-in-up">
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=600&q=80" alt="Green canopy">
-            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3 fade-in-up">
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e4?auto=format&fit=crop&w=600&q=80" alt="Tree planting">
-            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
           </div>
         </div>
       </div>
@@ -485,86 +225,74 @@
   </section>
 
   <!-- ========== CTA BANNER ========== -->
-  <section class="cta-banner fade-in-up">
-    <div class="container position-relative" style="z-index:2;">
+  <section class="cta-banner fade-in-up py-5">
+    <div class="container text-center text-white position-relative" style="z-index:2;">
       <h2>Ready to Give Your Trees Expert Care?</h2>
-      <p>Schedule a free consultation with our certified arborists today and discover the ArborPro difference.</p>
+      <p class="mb-4">Schedule a free consultation with our certified arborists today.</p>
       <div class="d-flex flex-wrap gap-3 justify-content-center">
-        <a href="signup.html" class="btn btn-secondary-custom btn-lg">
+        <a href="signup.html" class="btn btn-secondary-custom btn-lg rounded-pill px-4">
           <i class="bi bi-calendar-check"></i> Book Consultation
         </a>
-        <a href="tel:+1800555TREE" class="btn btn-outline-custom btn-lg" style="color:#fff;border-color:rgba(255,255,255,.4);">
-          <i class="bi bi-telephone"></i> Call 1-800-TREE
+        <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-4">
+          <i class="bi bi-envelope"></i> Contact Us
         </a>
       </div>
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer">
+  <footer class="footer pt-5">
     <div class="container">
       <div class="row g-4">
-        <!-- Brand -->
         <div class="col-lg-3 col-md-6">
-          <div class="footer-brand"><i class="bi bi-tree"></i> ArborPro</div>
-          <p>Professional arborist tree care services. Certified experts dedicated to preserving and nurturing your trees with science-based solutions.</p>
-          <div class="social-icons">
+          <div class="footer-brand mb-3"><i class="bi bi-tree"></i> ArborPro</div>
+          <p class="small">Professional arborist tree care services. Certified experts dedicated to preserving and nurturing your trees.</p>
+          <div class="social-icons d-flex gap-3 mt-3">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter-x"></i></a>
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-        <!-- Company Links -->
         <div class="col-lg-3 col-md-6">
-          <h5>Company</h5>
-          <ul class="footer-links">
-            <li><a href="#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
-            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Our Team</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Blog</a></li>
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled footer-links small">
+            <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="text-decoration-none text-muted">Services</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-decoration-none text-muted">Contact Us</a></li>
+            <li class="mb-2"><a href="dashboard.html" class="text-decoration-none text-muted">Dashboard</a></li>
           </ul>
         </div>
-        <!-- Support Links -->
         <div class="col-lg-3 col-md-6">
-          <h5>Support</h5>
-          <ul class="footer-links">
-            <li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Sitemap</a></li>
+          <h6 class="fw-bold mb-3">Support</h6>
+          <ul class="list-unstyled footer-links small">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQ</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Terms of Service</a></li>
           </ul>
         </div>
-        <!-- Newsletter -->
         <div class="col-lg-3 col-md-6">
-          <h5>Newsletter</h5>
-          <p>Subscribe for tree care tips, seasonal advice, and exclusive offers.</p>
+          <h6 class="fw-bold mb-3">Newsletter</h6>
+          <p class="small text-muted">Subscribe for tree care tips and seasonal advice.</p>
           <form class="newsletter-form">
-            <div class="mb-2">
-              <input type="email" class="form-control" placeholder="Your email address">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control form-control-sm" placeholder="Your email">
+              <button class="btn btn-primary-custom btn-sm" type="submit">Join</button>
             </div>
-            <button type="submit" class="btn btn-secondary-custom w-100">
-              <i class="bi bi-send"></i> Subscribe
-            </button>
           </form>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom text-center py-4 mt-4 border-top small text-muted">
         &copy; 2026 ArborPro Tree Care Service. All rights reserved.
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="bi bi-chevron-up"></i>
   </button>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
