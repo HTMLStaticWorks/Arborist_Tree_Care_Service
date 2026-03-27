@@ -175,4 +175,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ---------- RTL Toggle ---------- */
+  const rtlToggle = document.getElementById('rtlToggle');
+  const rtlToggleMobile = document.getElementById('rtlToggleMobile');
+
+  function setRTL(isRTL) {
+    if (isRTL) {
+      htmlEl.setAttribute('dir', 'rtl');
+      localStorage.setItem('arborist-rtl', 'true');
+    } else {
+      htmlEl.removeAttribute('dir');
+      localStorage.setItem('arborist-rtl', 'false');
+    }
+    updateRTLButtons(isRTL);
+  }
+
+  function updateRTLButtons(isRTL) {
+    [rtlToggle, rtlToggleMobile].forEach(btn => {
+      if (btn) {
+        btn.textContent = isRTL ? 'LTR' : 'RTL';
+        btn.classList.toggle('active', isRTL);
+      }
+    });
+  }
+
+  const savedRTL = localStorage.getItem('arborist-rtl') === 'true';
+  setRTL(savedRTL);
+
+  [rtlToggle, rtlToggleMobile].forEach(btn => {
+    if (btn) {
+      btn.addEventListener('click', function () {
+        const isRtl = htmlEl.getAttribute('dir') === 'rtl';
+        setRTL(!isRtl);
+      });
+    }
+  });
+
 });
