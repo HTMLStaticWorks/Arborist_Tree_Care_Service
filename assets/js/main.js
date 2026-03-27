@@ -146,7 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Password Toggle ---------- */
   document.querySelectorAll('.password-toggle').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      const input = this.previousElementSibling;
+      const inputGroup = this.closest('.input-group');
+      if (!inputGroup) return;
+      const input = inputGroup.querySelector('input');
       const icon = this.querySelector('i');
       if (input.type === 'password') {
         input.type = 'text';
