@@ -45,6 +45,13 @@
   --card-shadow: 0 8px 32px rgba(0,0,0,.4);
 }
 
+[data-theme="dark"] .text-dark {
+  color: #F1F8E9 !important;
+}
+[data-theme="dark"] .bg-white {
+  background-color: #1B241B !important;
+}
+
 /* ---------- Base Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -694,15 +701,15 @@ div + footer {
   color: #CFD8DC;
   padding: 60px 0 0;
 }
-.footer h5 {
-  color: #fff;
+.footer h5, .footer h6 {
+  color: #fff !important;
   font-weight: 700;
   margin-bottom: 1.2rem;
   font-size: 1.1rem;
 }
-.footer p { color: #B0BEC5; font-size: .95rem; }
-.footer a { color: #B0BEC5; transition: color var(--transition); font-size: .95rem; }
-.footer a:hover { color: var(--secondary); }
+.footer p, .footer .text-muted { color: #B0BEC5 !important; font-size: .95rem; }
+.footer a, .footer a.text-muted { color: #B0BEC5 !important; transition: color var(--transition); font-size: .95rem; }
+.footer a:hover, .footer a.text-muted:hover { color: var(--secondary) !important; }
 .footer .footer-brand {
   font-family: var(--font-heading);
   font-size: 1.6rem;
