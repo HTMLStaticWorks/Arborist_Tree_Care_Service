@@ -239,6 +239,17 @@ img { max-width: 100%; height: auto; }
   font-size: 1.8rem;
   color: var(--secondary);
 }
+.brand-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition);
+  vertical-align: middle;
+}
+.navbar-brand:hover .brand-logo-img,
+.footer-brand:hover .brand-logo-img {
+  transform: scale(1.1);
+}
 .navbar-custom .nav-link {
   color: var(--text);
   font-weight: 500;
