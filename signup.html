@@ -24,35 +24,35 @@
 
   <!-- SIGNUP FORM -->
   <div class="container-fluid p-0">
-    <div class="row g-0 min-vh-100">
+    <div class="row g-0 min-vh-100 flex-column-reverse flex-lg-row">
       <div class="col-lg-6 d-flex align-items-center justify-content-center p-4">
         <div class="auth-card" style="box-shadow:none;border:none;">
           <div class="text-center mb-2">
             <a href="index.html" class="text-decoration-none">
                 <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img mb-3" style="height: 64px; width: auto;">
-                <h4 class="fw-bold mt-2 text-dark">ArborPro</h4>
+                <h4 class="fw-bold mt-2" style="color: var(--text);">ArborPro</h4>
             </a>
           </div>
-          <h2 class="text-center fw-bold text-dark">Create Account</h2>
-          <p class="auth-subtitle text-center text-dark opacity-100 fw-medium">Join our community of tree lovers</p>
+          <h2 class="text-center fw-bold" style="color: var(--text);">Create Account</h2>
+          <p class="auth-subtitle text-center fw-medium" style="color: var(--text);">Join our community of tree lovers</p>
           <form>
             <div class="mb-3">
-              <label class="form-label text-dark fw-bold">Full Name</label>
+              <label class="form-label fw-bold" style="color: var(--text);">Full Name</label>
               <input type="text" class="form-control" placeholder="John Doe" required>
             </div>
             <div class="mb-3">
-              <label class="form-label text-dark fw-bold">Email Address</label>
+              <label class="form-label fw-bold" style="color: var(--text);">Email Address</label>
               <input type="email" class="form-control" placeholder="you@example.com" required>
             </div>
             <div class="mb-3">
-              <label class="form-label text-dark fw-bold">Password</label>
+              <label class="form-label fw-bold" style="color: var(--text);">Password</label>
               <div class="input-group">
                 <input type="password" class="form-control" placeholder="Create a password" id="signupPassword" required>
                 <button class="btn border password-toggle" type="button" style="border-color:var(--border);"><i class="bi bi-eye"></i></button>
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label text-dark fw-bold">Confirm Password</label>
+              <label class="form-label fw-bold" style="color: var(--text);">Confirm Password</label>
               <div class="input-group">
                 <input type="password" class="form-control" placeholder="Confirm your password" id="signupConfirm" required>
                 <button class="btn border password-toggle" type="button" style="border-color:var(--border);"><i class="bi bi-eye"></i></button>
@@ -60,8 +60,8 @@
             </div>
             <div class="form-check mb-3">
               <input type="checkbox" class="form-check-input" id="agreeTerms" required>
-              <label class="form-check-label" for="agreeTerms" style="font-size:.9rem;">
-                I agree to the <a href="#" class="hover-underline" style="color:var(--primary);font-weight:700;">Terms</a> and <a href="#" class="hover-underline" style="color:var(--primary);font-weight:700;">Privacy</a>
+              <label class="form-check-label" for="agreeTerms" style="font-size:.9rem; color: var(--text);">
+                I agree to the <a href="#" class="text-primary hover-underline" style="font-weight:700;">Terms</a> and <a href="#" class="text-primary hover-underline" style="font-weight:700;">Privacy</a>
               </label>
             </div>
             <button type="submit" class="btn btn-primary-custom w-100 justify-content-center">
@@ -71,11 +71,11 @@
           <div class="divider"><span>or sign up with</span></div>
           <div class="social-login">
             <a href="#" title="Google" class="text-danger border-danger-subtle"><i class="bi bi-google"></i></a>
-            <a href="#" title="Apple" class="text-dark border-dark-subtle"><i class="bi bi-apple"></i></a>
+            <a href="#" title="Apple" class="border-dark-subtle" style="color: var(--text);"><i class="bi bi-apple"></i></a>
             <a href="#" title="Facebook" class="text-primary border-primary-subtle"><i class="bi bi-facebook"></i></a>
           </div>
-          <p class="text-center mt-4 mb-0" style="font-size:.95rem;">
-            Already have an account? <a href="login.html" class="fw-bold hover-underline" style="color:var(--primary);">Login</a>
+          <p class="text-center mt-4 mb-0" style="font-size:.95rem; color: var(--text);">
+            Already have an account? <a href="login.html" class="text-primary fw-bold hover-underline">Login</a>
           </p>
         </div>
       </div>

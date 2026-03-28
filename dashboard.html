@@ -19,7 +19,7 @@
     <button class="sidebar-close text-white" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
     <div class="sidebar-brand text-white border-bottom border-secondary mb-3 p-3">
       <a href="index.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
-        <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2">
+        <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2" style="filter: brightness(0) invert(1);">
         <span class="fw-bold" style="font-size:1.4rem;">ArborPro</span>
       </a>
     </div>
@@ -84,13 +84,13 @@
           <div class="col-xl-8">
             <div class="row g-3">
               <div class="col-sm-6">
-                <div class="kpi-card">
+                <div class="kpi-card h-100 shadow-sm rounded-4 border-0 p-4" style="background:var(--surface);">
                   <div class="d-flex align-items-center justify-content-between mb-3">
-                    <div class="kpi-icon" style="background:var(--primary);"><i class="bi bi-tree"></i></div>
-                    <span class="kpi-change up"><i class="bi bi-arrow-up-short"></i>12%</span>
+                    <div class="kpi-icon shadow-sm" style="background:var(--primary); width:45px; height:45px; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#fff;"><i class="bi bi-tree"></i></div>
+                    <span class="kpi-change up text-success fw-bold"><i class="bi bi-arrow-up-short"></i>12%</span>
                   </div>
-                  <div class="kpi-value">342</div>
-                  <div class="kpi-label">Trees Managed</div>
+                  <div class="kpi-value fw-bold fs-2 text-dark opacity-100">342</div>
+                  <div class="kpi-label text-muted fw-medium text-uppercase" style="letter-spacing:1px;font-size:0.8rem;">Trees Managed</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -236,7 +236,7 @@
           <div class="row g-4 align-items-stretch">
             <div class="col-lg-5">
               <div class="p-3 border rounded-3 bg-light h-100 d-flex flex-column align-items-center justify-content-center">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=600&q=80" alt="Map Overlay" class="img-fluid rounded-3 mb-3 w-100 shadow-sm" style="height:250px;object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?fm=jpg&fit=crop&w=600&q=80" alt="Map Overlay" class="img-fluid rounded-3 mb-3 w-100 shadow-sm" style="height:250px;object-fit:cover;">
                 <p class="small text-center text-dark fw-bold mb-0"><i class="bi bi-geo-alt text-danger"></i> Interactive Property Map Overlay</p>
               </div>
             </div>
