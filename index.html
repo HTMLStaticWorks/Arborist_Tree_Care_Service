@@ -15,7 +15,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/489/489969.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
 
@@ -37,18 +37,18 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html" data-page="index.html">Home 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html" data-page="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Residential</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html" data-page="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
         </ul>
-        <div class="d-flex align-items-center gap-2">
-          <button class="btn btn-sm btn-outline-custom d-none d-lg-flex" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-custom d-none d-lg-flex" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
           <a href="login.html" class="btn btn-login">Login</a>
-          <a href="signup.html" class="btn btn-signup">Sign Up</a>
-          <button class="theme-toggle d-none d-lg-flex" id="themeToggle" aria-label="Toggle theme">
+          <a href="signup.html" class="btn btn-primary-custom" style="padding: 7px 22px;">Sign Up</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
             <i class="bi bi-moon-fill"></i>
           </button>
         </div>
@@ -64,47 +64,43 @@
       </h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column mb-3">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
-        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+    <div class="offcanvas-body d-flex flex-column">
+      <ul class="nav flex-column mb-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="home2.html">Residential</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
-      <div class="d-grid gap-2">
+      <div class="d-grid gap-3 pt-4 border-top">
         <button class="btn btn-outline-custom w-100" id="rtlToggleMobile">Toggle RTL</button>
-        <a href="login.html" class="btn btn-primary-custom w-100 justify-content-center">Login</a>
-        <a href="signup.html" class="btn btn-secondary-custom w-100 justify-content-center">Sign Up</a>
+        <a href="login.html" class="btn btn-outline-custom w-100">Login</a>
+        <a href="signup.html" class="btn btn-primary-custom w-100">Sign Up</a>
       </div>
     </div>
   </div>
 
   <!-- ========== HERO SECTION ========== -->
-  <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1621815147321-2e6504a441e8?auto=format&fit=crop&w=1600&q=80');">
+  <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1621815147321-2e6504a441e8?auto=format&fit=crop&w=1600&q=80');">
+    <div class="hero-overlay"></div>
     <div class="container hero-content text-center">
       <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-10">
           <div class="d-flex justify-content-center">
-            <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-semibold" style="z-index: 5;">
-              <i class="bi bi-award me-1"></i> ISA Certified Arborists
+            <span class="badge bg-secondary text-white mb-4 px-4 py-2 rounded-pill fw-bold shadow-sm" style="z-index: 5; font-size: 0.9rem;">
+              <i class="bi bi-award me-2"></i> ISA Certified Arborists
             </span>
           </div>
-          <h1 class="display-3 fw-bold">Residential Tree Care <br><span>Perfect Landscapes</span></h1>
-          <p class="lead mx-auto" style="max-width: 700px;">ArborPro specializes in residential canopy management. We protect your home's most valuable natural assets with delicate pruning, root care, and long-term vitality plans.</p>
+          <h1 class="display-2 fw-bold mb-4">Residential Tree Care <br><span class="text-secondary">Perfect Landscapes</span></h1>
+          <p class="lead mx-auto mb-5" style="max-width: 800px; font-size: 1.25rem;">ArborPro specializes in residential canopy management. We protect your home's most valuable natural assets with delicate pruning, root care, and long-term vitality plans.</p>
           <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
-            <a href="services.html" class="btn btn-secondary-custom btn-lg">
+            <a href="services.html" class="btn btn-secondary-custom btn-lg px-5 py-3">
               <i class="bi bi-shield-check"></i> View Services
             </a>
-            <a href="#about" class="btn btn-outline-custom btn-lg text-white border-white">
+            <a href="#about" class="btn btn-outline-light btn-lg px-5 py-3">
               <i class="bi bi-info-circle"></i> Learn Method
             </a>
-          </div>
-          <div class="d-flex justify-content-center gap-4 gap-md-5 mt-5 flex-wrap">
-            <div><span class="fw-bold fs-3 text-white">1500+</span><br><small class="text-white-50 text-uppercase" style="letter-spacing:1px;font-size:.7rem;">Projects Done</small></div>
-            <div><span class="fw-bold fs-3 text-white">25+</span><br><small class="text-white-50 text-uppercase" style="letter-spacing:1px;font-size:.7rem;">Certified Experts</small></div>
-            <div><span class="fw-bold fs-3 text-white">Top Rated</span><br><small class="text-white-50 text-uppercase" style="letter-spacing:1px;font-size:.7rem;">on Google</small></div>
           </div>
         </div>
       </div>
@@ -116,11 +112,14 @@
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 fade-in-up">
-          <div class="about-image-grid d-none d-md-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-            <img src="https://images.unsplash.com/photo-1589330694653-90d297924660?auto=format&fit=crop&w=400&q=80" alt="Backyard pruning" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover">
-            <img src="https://images.unsplash.com/photo-1558905619-14e3651dff65?auto=format&fit=crop&w=400&q=80" alt="Garden health" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover mt-4">
+          <div class="about-image-grid position-relative" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+            <img src="https://images.unsplash.com/photo-1589330694653-90d297924660?auto=format&fit=crop&w=600&q=80" alt="Backyard pruning" class="img-fluid rounded-4 shadow-lg h-100 object-fit-cover">
+            <img src="https://images.unsplash.com/photo-1558905619-14e3651dff65?auto=format&fit=crop&w=600&q=80" alt="Garden health" class="img-fluid rounded-4 shadow-lg h-100 object-fit-cover mt-5">
+            <div class="experience-badge bg-secondary-custom text-white p-4 rounded-4 shadow position-absolute bottom-0 start-0 mb-n3 ms-n3 d-none d-md-block" style="z-index: 2;">
+              <span class="h2 fw-bold mb-0">15+</span><br>
+              <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Years Success</small>
+            </div>
           </div>
-          <img src="https://images.unsplash.com/photo-1589330694653-90d297924660?auto=format&fit=crop&w=800&q=80" alt="Residential About" class="img-fluid rounded-4 shadow-sm d-md-none">
         </div>
         <div class="col-lg-6 fade-in-up">
           <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 0.85rem;">The ArborPro Mission</span>
@@ -145,8 +144,8 @@
               </div>
             </div>
           </div>
-          <div class="text-center text-lg-start">
-            <a href="about.html" class="btn btn-primary-custom px-4 py-2 rounded-pill">Learn Our History</a>
+          <div class="text-center text-lg-start mt-4">
+            <a href="about.html" class="btn btn-primary-custom px-5 py-3 rounded-pill shadow-sm">Learn Our History</a>
           </div>
         </div>
       </div>
@@ -216,26 +215,26 @@
       </div>
       <div class="row g-4 mt-2">
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:#fff; border: 2px solid var(--primary); color: #000;">
-            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: #fff; background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%;"><i class="bi bi-scissors"></i></div>
-            <h5 class="fw-bold mb-3">Tree Trimming</h5>
-            <p class="text-dark small mb-0 fw-semibold">Precision pruning to enhance tree health, aesthetics, and safety for your home.</p>
+          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:var(--surface); border: 2px solid var(--primary); color: var(--text);">
+            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: var(--secondary); background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="bi bi-scissors"></i></div>
+            <h5 class="fw-bold mb-3">Tree Pruning</h5>
+            <p class="text-dark opacity-100 small mb-0 fw-semibold">Precision pruning to enhance tree health, aesthetics, and safety for your home.</p>
             <a href="services.html" class="d-inline-block mt-3 text-primary text-decoration-none fw-bold hover-underline">Explore More <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:#fff; border: 2px solid var(--primary); color: #000;">
-            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: #fff; background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%;"><i class="bi bi-x-octagon"></i></div>
+          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:var(--surface); border: 2px solid var(--primary); color: var(--text);">
+            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: var(--secondary); background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="bi bi-x-octagon"></i></div>
             <h5 class="fw-bold mb-3">Tree Removal</h5>
-            <p class="text-dark small mb-0 fw-semibold">Safe removal of hazardous, dead, or unwanted trees with zero property damage.</p>
+            <p class="text-dark opacity-100 small mb-0 fw-semibold">Safe removal of hazardous, dead, or unwanted trees with zero property damage.</p>
             <a href="services.html" class="d-inline-block mt-3 text-primary text-decoration-none fw-bold hover-underline">Explore More <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:#fff; border: 2px solid var(--primary); color: #000;">
-            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: #fff; background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%;"><i class="bi bi-heart-pulse"></i></div>
-            <h5 class="fw-bold mb-3">Health Assessment</h5>
-            <p class="text-dark small mb-0 fw-semibold">Diagnostic evaluations to detect diseases and pests early in your garden.</p>
+          <div class="icon-card text-center p-5 h-100 shadow-sm rounded-4" style="background:var(--surface); border: 2px solid var(--primary); color: var(--text);">
+            <div class="icon-wrap mx-auto mb-4" style="font-size: 3rem; color: var(--secondary); background: var(--primary); padding: 15px; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="bi bi-heart-pulse"></i></div>
+            <h5 class="fw-bold mb-3">Soil Analytics</h5>
+            <p class="text-dark opacity-100 small mb-0 fw-semibold">Diagnostic evaluations to detect diseases and nutrient deficiencies early.</p>
             <a href="services.html" class="d-inline-block mt-3 text-primary text-decoration-none fw-bold hover-underline">Explore More <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
@@ -318,33 +317,36 @@
         <div class="col-md-6 col-lg-4 fade-in-up">
           <div class="testimonial-card p-4 border-2 border-primary rounded-4 shadow-sm h-100 bg-white">
             <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote mb-4 text-dark fw-semibold">"ArborPro transformed our property. Their team of certified arborists assessed every tree and provided a comprehensive care plan."</p>
+            <p class="quote mb-4 text-dark opacity-100 fw-semibold">"ArborPro transformed our property. Their team of certified arborists assessed every tree and provided a comprehensive care plan."</p>
             <div class="d-flex align-items-center gap-3">
               <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">JD</div>
-              <div><h6 class="mb-0 fw-bold text-dark">James Davidson</h6><small class="text-muted">Property Manager</small></div>
+              <div><h6 class="mb-0 fw-bold text-dark opacity-100">James Davidson</h6><small class="text-muted">Property Manager</small></div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
           <div class="testimonial-card p-4 border-2 border-primary rounded-4 shadow-sm h-100 bg-white">
             <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote mb-4 text-dark fw-semibold">"After a fierce storm, ArborPro responded within hours. They cleared the fallen trees safely and saved the old oak."</p>
+            <p class="quote mb-4 text-dark opacity-100 fw-semibold">"After a fierce storm, ArborPro responded within hours. They cleared the fallen trees safely and saved the old oak."</p>
             <div class="d-flex align-items-center gap-3">
               <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">SM</div>
-              <div><h6 class="mb-0 fw-bold text-dark">Sarah Mitchell</h6><small class="text-muted">Homeowner</small></div>
+              <div><h6 class="mb-0 fw-bold text-dark opacity-100">Sarah Mitchell</h6><small class="text-muted">Homeowner</small></div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 fade-in-up">
           <div class="testimonial-card p-4 border-2 border-primary rounded-4 shadow-sm h-100 bg-white">
             <div class="stars mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote mb-4 text-dark fw-semibold">"Professional, scientific, and efficient. They saved several trees that other companies wanted to remove. Highly recommend!"</p>
+            <p class="quote mb-4 text-dark opacity-100 fw-semibold">"Professional, scientific, and efficient. They saved several trees that other companies wanted to remove. Highly recommend!"</p>
             <div class="d-flex align-items-center gap-3">
               <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px;">RK</div>
-              <div><h6 class="mb-0 fw-bold text-dark">Robert Kim</h6><small class="text-muted">HOA President</small></div>
+              <div><h6 class="mb-0 fw-bold text-dark opacity-100">Robert Kim</h6><small class="text-muted">HOA President</small></div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="about.html" class="btn btn-primary-custom px-5 py-3 rounded-pill shadow-sm">View All Success Stories</a>
       </div>
     </div>
   </section>
@@ -365,7 +367,71 @@
     </div>
   </section>
 
-  <!-- ========== FAQ SECTION (New Section 1) ========== -->
+  <!-- ========== WHY CHOOSE US (New Section 1) ========== -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Why ArborPro</span>
+          <h2 class="section-title mt-2">Setting the Standard in <span class="text-primary">Modern Arboriculture</span></h2>
+          <p class="lead mb-4">We combine traditional expertise with cutting-edge technology to deliver unmatched results for your landscape.</p>
+          <div class="d-flex gap-4 mb-4">
+            <div class="feat-icon bg-white shadow-sm p-3 rounded-4" style="width: 70px; height: 70px;">
+              <i class="bi bi-cpu fs-2 text-primary"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold">AI Pathogen Mapping</h5>
+              <p class="small text-muted mb-0">We use advanced imaging to predict tree health issues before they become visible.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-4 mb-4">
+            <div class="feat-icon bg-white shadow-sm p-3 rounded-4" style="width: 70px; height: 70px;">
+              <i class="bi bi-recycle fs-2 text-primary"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold">Eco-First Disposal</h5>
+              <p class="small text-muted mb-0">100% of tree waste is converted into organic nutrients for local forest restoration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1542601906970-30f5d070b80f?auto=format&fit=crop&w=800&q=80" alt="Arborist Tech" class="img-fluid rounded-5 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GLOBAL IMPACT (New Section 2) ========== -->
+  <section class="section-padding bg-dark text-white overflow-hidden position-relative">
+    <div class="hero-overlay" style="opacity: 0.9;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+            <h2 class="text-white mb-4">Our Environmental Contribution</h2>
+            <p class="lead text-white-50 mb-5">Every project we undertake contributes to a healthier global canopy. We track the carbon capture potential of the trees we save.</p>
+            <div class="row g-4 text-center">
+                <div class="col-6">
+                    <div class="p-4 bg-white bg-opacity-10 rounded-4 border border-white border-opacity-10">
+                        <h1 class="display-4 fw-bold text-secondary">2.4k</h1>
+                        <p class="small text-uppercase mb-0">Tons CO2 Saved</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-4 bg-white bg-opacity-10 rounded-4 border border-white border-opacity-10">
+                        <h1 class="display-4 fw-bold text-secondary">15k+</h1>
+                        <p class="small text-uppercase mb-0">Trees Pruned</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80" alt="Forest preservation" class="img-fluid rounded-5 shadow-lg border border-white border-opacity-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
   <section class="section-padding bg-light">
     <div class="container">
       <div class="text-center mb-5 fade-in-up">
@@ -375,9 +441,9 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="accordion accordion-flush" id="faqAccordion">
-            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4">
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <button class="accordion-button collapsed rounded-4 fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                   How often should residential trees be pruned?
                 </button>
               </h2>
@@ -387,23 +453,35 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded-4 fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Do you provide emergency storm cleanup services?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted">
+                    Yes, we offer 24/7 emergency response for hazardous fallen trees and storm damage assessment.
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== NEWSLETTER SECTION (New Section 2) ========== -->
+  <!-- ========== NEWSLETTER SECTION ========== -->
   <section class="section-padding bg-primary text-white">
     <div class="container text-center">
       <h2 class="text-white mb-3">Join the ArborPro Community</h2>
       <p class="mb-4 opacity-75">Get monthly seasonal tree care tips and exclusive service discounts.</p>
       <form class="row justify-content-center g-3">
-        <div class="col-md-4">
-          <input type="email" class="form-control rounded-pill px-4" placeholder="Your email address">
+        <div class="col-md-5">
+          <input type="email" class="form-control rounded-pill px-4 py-3" placeholder="Enter your email address">
         </div>
         <div class="col-md-auto">
-          <button class="btn btn-secondary-custom rounded-pill px-5">Subscribe Now</button>
+          <button class="btn btn-secondary-custom rounded-pill px-5 py-3 shadow-sm">Subscribe Now</button>
         </div>
       </form>
     </div>
@@ -413,9 +491,9 @@
   <footer class="footer pt-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-brand mb-3" style="font-size: 1.5rem; font-weight: 700; color:#fff;">
-            <i class="bi bi-tree" style="color:var(--secondary);"></i> ArborPro
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand mb-3">
+            <i class="bi bi-tree"></i> ArborPro
           </div>
           <p class="text-light opacity-75 small">Professional arborist tree care services. Certified experts dedicated to preserving and nurturing your trees with science.</p>
           <div class="social-icons d-flex gap-3 mt-3">
