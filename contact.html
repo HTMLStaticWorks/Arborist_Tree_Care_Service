@@ -34,13 +34,8 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Home 1 (Residential)</a></li>
-              <li><a class="dropdown-item" href="home2.html">Home 2 (Commercial)</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html" data-page="contact.html">Contact</a></li>
@@ -58,7 +53,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" style="font-family:var(--font-heading);color:var(--primary);">
@@ -68,23 +62,26 @@
     </div>
     <div class="offcanvas-body d-flex flex-column">
       <ul class="nav flex-column mb-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="home2.html">Residential</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
       <div class="d-grid gap-3 pt-4 border-top">
-        <button class="btn btn-outline-custom w-100" id="rtlToggleMobile">Toggle RTL</button>
-        <a href="login.html" class="btn btn-outline-custom w-100">Login</a>
-        <a href="signup.html" class="btn btn-primary-custom w-100">Sign Up</a>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-custom w-100 btn-navbar-mobile" id="rtlToggleMobile">Toggle RTL</button>
+          <button class="theme-toggle btn-navbar-mobile" id="themeToggleMobile" style="width:50px; flex-shrink:0;"><i class="bi bi-moon-fill"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-login btn-navbar-mobile">Login</a>
+        <a href="signup.html" class="btn btn-signup btn-navbar-mobile">Sign Up</a>
       </div>
     </div>
   </div>
 
   <!-- ========== BREADCRUMB SECTION ========== -->
-  <section class="page-header section-padding" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
+  <section class="page-header section-padding" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fm=jpg&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
     <div class="container text-center text-white">
       <h1 class="display-4 fw-bold mb-3">Get In Touch</h1>
       <nav aria-label="breadcrumb">
@@ -207,17 +204,17 @@
       <div class="row g-3 gallery">
         <div class="col-md-4 col-sm-6 fade-in-up">
           <div class="gallery-item rounded-4 overflow-hidden shadow-sm" style="height: 250px;">
-            <img src="https://images.unsplash.com/photo-1589330694653-90d297924660?fm=jpg&fit=crop&w=600&q=80" alt="Aerial Lift" class="w-100 h-100 object-fit-cover hover-zoom">
+            <img src="https://images.unsplash.com/photo-1590333742205-063f9da8f58b?auto=format&fm=jpg&fit=crop&w=800&q=80" alt="Arborist Climbing" class="w-100 h-100 object-fit-cover hover-zoom">
           </div>
         </div>
         <div class="col-md-4 col-sm-6 fade-in-up">
           <div class="gallery-item rounded-4 overflow-hidden shadow-sm" style="height: 250px;">
-            <img src="https://images.unsplash.com/photo-1558905619-14e3651dff65?fm=jpg&fit=crop&w=600&q=80" alt="Office Garden" class="w-100 h-100 object-fit-cover hover-zoom">
+            <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fm=jpg&fit=crop&w=800&q=80" alt="Wood Management" class="w-100 h-100 object-fit-cover hover-zoom">
           </div>
         </div>
         <div class="col-md-4 col-sm-12 fade-in-up">
           <div class="gallery-item rounded-4 overflow-hidden shadow-sm" style="height: 250px;">
-            <img src="https://images.unsplash.com/photo-1511200989345-420065096fd5?fm=jpg&fit=crop&w=600&q=80" alt="Precision Tools" class="w-100 h-100 object-fit-cover hover-zoom">
+            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fm=jpg&fit=crop&w=800&q=80" alt="Urban Forestry" class="w-100 h-100 object-fit-cover hover-zoom">
           </div>
         </div>
       </div>
@@ -273,15 +270,14 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer pt-5">
+  <footer class="footer">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <div class="footer-brand mb-3">
             <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2"> ArborPro
           </div>
-          <p class="text-light opacity-75 small">Professional arborist services dedicated to the health, safety, and beauty of your landscape with scientific precision.</p>
-        </div>
+          <p class="text-light opacity-75 small">Professional arborist tree care services. Certified experts dedicated to preserving and nurturing your trees with science.</p>
           <div class="social-icons d-flex gap-3 mt-3">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -290,35 +286,34 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <h6 class="fw-bold mb-3">Company</h6>
           <ul class="list-unstyled footer-links small">
-            <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">About Us</a></li>
-            <li class="mb-2"><a href="services.html" class="text-decoration-none text-muted">Services</a></li>
-            <li class="mb-2"><a href="contact.html" class="text-decoration-none text-muted">Contact Us</a></li>
-            <li class="mb-2"><a href="dashboard.html" class="text-decoration-none text-muted">Dashboard</a></li>
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+            <li class="mb-2"><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold mb-3">Support</h6>
+          <ul class="list-unstyled footer-links small">
+            <li class="mb-2"><a href="#">FAQ</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#">Terms of Service</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold mb-3">Services</h6>
-          <ul class="list-unstyled footer-links small">
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Tree Removal</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Pruning & Trimming</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Health Assessments</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Emergency Storm Care</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold mb-3">Stay Connected</h6>
-          <p class="small text-muted">Subscribe for tree care tips and seasonal advice.</p>
+          <h6 class="fw-bold mb-3">Newsletter</h6>
+          <p class="small text-muted mb-3">Subscribe for tree care tips and seasonal advice.</p>
           <form class="newsletter-form">
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Your email">
-              <button class="btn btn-primary-custom" type="submit">Join</button>
+            <div class="input-group mb-2">
+              <input type="email" class="form-control form-control-sm" placeholder="Your email">
+              <button class="btn btn-primary-custom btn-sm" type="submit">Join</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="footer-bottom text-center py-4 mt-4 border-top small text-muted">
+      <div class="footer-bottom text-center">
         &copy; 2026 ArborPro Tree Care Service. All rights reserved.
       </div>
     </div>

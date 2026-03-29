@@ -30,13 +30,8 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Home 1 (Residential)</a></li>
-              <li><a class="dropdown-item active" href="home2.html">Home 2 (Commercial)</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link active" href="home2.html">Home 2</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html" data-page="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html" data-page="contact.html">Contact</a></li>
@@ -61,36 +56,39 @@
     </div>
     <div class="offcanvas-body d-flex flex-column">
       <ul class="nav flex-column mb-auto">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="services.html">Services</a></li>
-        <li><a class="nav-link active" href="home2.html">Residential</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link active" href="home2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
       <div class="d-grid gap-3 pt-4 border-top">
-        <button class="btn btn-outline-custom w-100" id="rtlToggleMobile">Toggle RTL</button>
-        <a href="login.html" class="btn btn-outline-custom w-100">Login</a>
-        <a href="signup.html" class="btn btn-primary-custom w-100">Sign Up</a>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-custom w-100 btn-navbar-mobile" id="rtlToggleMobile">Toggle RTL</button>
+          <button class="theme-toggle btn-navbar-mobile" id="themeToggleMobile" style="width:50px; flex-shrink:0;"><i class="bi bi-moon-fill"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-login btn-navbar-mobile">Login</a>
+        <a href="signup.html" class="btn btn-signup btn-navbar-mobile">Sign Up</a>
       </div>
     </div>
   </div>
 
   <!-- ========== COMMERCIAL HERO ========== -->
-  <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541444105263-ce2674e790a3?fm=jpg&fit=crop&w=1600&q=80');">
+  <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542601906970-30f5d070b80f?fm=jpg&fit=crop&w=1600&q=80');">
     <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(38,50,56,.9) 0%, rgba(27,94,32,.8) 100%);"></div>
-    <div class="container hero-content text-start">
-      <div class="row align-items-center">
-        <div class="col-lg-8 fade-in-up">
+    <div class="container hero-content text-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-10 fade-in-up">
           <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold">Enterprise Solutions</span>
           <h1 class="display-4 fw-bold mb-4">Commercial & Municipal <br><span class="text-secondary">Arboriculture Excellence</span></h1>
-          <p class="lead mb-5">Home 2 — High-volume canopy management for campuses, parks, and industrial sites. We provide scalable expert care with full regulatory compliance and zero operational downtime.</p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="services.html" class="btn btn-primary-custom btn-lg rounded-pill px-5 shadow">
-               Contract Services
+          <p class="lead mx-auto mb-5" style="max-width: 900px;">Home 2 — High-volume canopy management for campuses, parks, and industrial sites. We provide scalable expert care with full regulatory compliance and zero operational downtime.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center align-items-center hero-btns">
+            <a href="services.html" class="btn btn-primary-custom btn-lg d-flex align-items-center justify-content-center gap-2" style="width: 280px; max-width: 100%; padding: 15px 30px;">
+               <i class="bi bi-file-earmark-text" style="width: 24px;"></i> <span>Contract Services</span>
             </a>
-            <a href="#compliance" class="btn btn-outline-light btn-lg rounded-pill px-5">
-               Compliance Docs
+            <a href="#compliance" class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center gap-2" style="width: 280px; max-width: 100%; padding: 15px 30px;">
+               <i class="bi bi-shield-check" style="width: 24px;"></i> <span>Compliance Docs</span>
             </a>
           </div>
         </div>
@@ -127,7 +125,7 @@
         </div>
         <div class="col-lg-6 fade-in-up">
           <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1541444105263-ce2674e790a3?fm=jpg&fit=crop&w=800&q=80" alt="Large tree dismantling" class="img-fluid rounded-4 shadow-lg">
+            <img src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?fm=jpg&fit=crop&w=800&q=80" alt="Arborist at work" class="img-fluid rounded-4 shadow-lg">
             <div class="position-absolute bottom-0 end-0 bg-primary-custom text-white p-4 rounded-4 shadow m-4 d-none d-md-block" style="max-width:200px;">
               <h4 class="fw-bold mb-1">$5M</h4>
               <p class="small mb-0">Fully Bonded & Insured for Industrial Sites.</p>
@@ -150,7 +148,7 @@
         <div class="col-lg-3 col-md-6 fade-in-up">
           <div class="text-center">
             <div class="mb-3 rounded-4 overflow-hidden shadow-sm" style="height:350px;">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Founder" class="w-100 h-100 object-fit-cover">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&fm=jpg&q=80" alt="Founder" class="w-100 h-100 object-fit-cover">
             </div>
             <h5 class="fw-bold mb-1">Dr. Robert Sterling</h5>
             <p class="text-secondary-custom small fw-bold">Founder & Master Arborist</p>
@@ -162,7 +160,7 @@
         <div class="col-lg-3 col-md-6 fade-in-up">
           <div class="text-center">
             <div class="mb-3 rounded-4 overflow-hidden shadow-sm" style="height:350px;">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Ecologist" class="w-100 h-100 object-fit-cover">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&fm=jpg&q=80" alt="Ecologist" class="w-100 h-100 object-fit-cover">
             </div>
             <h5 class="fw-bold mb-1">Sarah Jenkins</h5>
             <p class="text-secondary-custom small fw-bold">Chief Urban Ecologist</p>
@@ -174,7 +172,7 @@
         <div class="col-lg-3 col-md-6 fade-in-up">
           <div class="text-center">
             <div class="mb-3 rounded-4 overflow-hidden shadow-sm" style="height:350px;">
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Director" class="w-100 h-100 object-fit-cover">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&fm=jpg&q=80" alt="Director" class="w-100 h-100 object-fit-cover">
             </div>
             <h5 class="fw-bold mb-1">Marcus Thorne</h5>
             <p class="text-secondary-custom small fw-bold">Operations Director</p>
@@ -186,7 +184,7 @@
         <div class="col-lg-3 col-md-6 fade-in-up">
           <div class="text-center">
             <div class="mb-3 rounded-4 overflow-hidden shadow-sm" style="height:350px;">
-              <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=400&q=80" alt="Pathologist" class="w-100 h-100 object-fit-cover">
+              <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=400&fm=jpg&q=80" alt="Pathologist" class="w-100 h-100 object-fit-cover">
             </div>
             <h5 class="fw-bold mb-1">Elena Costa</h5>
             <p class="text-secondary-custom small fw-bold">Lead Plant Pathologist</p>
@@ -214,7 +212,7 @@
         </div>
         <div class="col-lg-6 fade-in-up">
           <div class="hero-split-img" style="height:480px;position:relative;">
-            <img src="https://images.unsplash.com/photo-1512130632577-fb3289530432?auto=format&fit=crop&w=800&q=80" alt="Municipal canopy">
+            <img src="https://images.unsplash.com/photo-1512130632577-fb3289530432?auto=format&fit=crop&w=800&fm=jpg&q=80" alt="Municipal canopy">
             <div style="position:absolute;bottom:20px;left:20px;background:var(--secondary);color:#fff;padding:16px 24px;border-radius:var(--radius);font-weight:600;"><i class="bi bi-shield-check me-2"></i> ISA Certified Experts</div>
           </div>
         </div>
@@ -303,27 +301,27 @@
           <p>We partner with local universities to study tree resiliency in changing climates. Our "Science of Trees" program ensures that every project contributes to a larger database of urban forest health.</p>
           <div class="row mt-4 g-3">
             <div class="col-6">
-              <div class="p-3 border rounded-3 text-center">
-                <i class="bi bi-thermometer-half text-primary-custom fs-3"></i>
-                <h6 class="mt-2 text-secondary-custom">Climate Adaptability</h6>
+              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+                <i class="bi bi-thermometer-half text-primary-custom fs-2 mb-2"></i>
+                <h6 class="mb-0 text-secondary-custom fw-bold">Climate Adaptability</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 border rounded-3 text-center">
-                <i class="bi bi-droplets text-primary-custom fs-3"></i>
-                <h6 class="mt-2 text-secondary-custom">Hydration Analysis</h6>
+              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+                <i class="bi bi-droplets text-primary-custom fs-2 mb-2"></i>
+                <h6 class="mb-0 text-secondary-custom fw-bold">Hydration Analysis</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 border rounded-3 text-center">
-                <i class="bi bi-bug text-primary-custom fs-3"></i>
-                <h6 class="mt-2 text-secondary-custom">Pest Resiliency</h6>
+              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+                <i class="bi bi-bug text-primary-custom fs-2 mb-2"></i>
+                <h6 class="mb-0 text-secondary-custom fw-bold">Pest Resiliency</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 border rounded-3 text-center">
-                <i class="bi bi-node-plus text-primary-custom fs-3"></i>
-                <h6 class="mt-2 text-secondary-custom">Structural Integrity</h6>
+              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+                <i class="bi bi-node-plus text-primary-custom fs-2 mb-2"></i>
+                <h6 class="mb-0 text-secondary-custom fw-bold">Structural Integrity</h6>
               </div>
             </div>
           </div>
@@ -362,25 +360,25 @@
   <!-- ========== COMPLIANCE & SAFETY (New Section) ========== -->
   <section id="compliance" class="section-padding bg-dark text-white">
     <div class="container">
-      <div class="row g-5 align-items-center">
+      <div class="row g-4">
         <div class="col-lg-12 text-center mb-5 fade-in-up">
              <h2 class="text-white">Industrial Compliance Standards</h2>
              <p class="text-white-50">We exceed federal and local safety mandates for complex site operations.</p>
         </div>
         <div class="col-md-4 fade-in-up">
-            <div class="p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
+            <div class="compliance-card p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
                 <h5 class="fw-bold text-secondary mb-3"><i class="bi bi-shield-check me-2"></i>ANSI A300</h5>
                 <p class="small mb-0">All pruning, structural support, and fertilization follows the highest industry standards for tree management.</p>
             </div>
         </div>
         <div class="col-md-4 fade-in-up">
-            <div class="p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
+            <div class="compliance-card p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
                 <h5 class="fw-bold text-secondary mb-3"><i class="bi bi-lightning-charge me-2"></i>EHAP Certified</h5>
                 <p class="small mb-0">Specialized training for operations near electrical lines and sensitive utility infrastructure.</p>
             </div>
         </div>
         <div class="col-md-4 fade-in-up">
-            <div class="p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
+            <div class="compliance-card p-4 bg-white bg-opacity-10 border border-white border-opacity-10 rounded-4 h-100">
                 <h5 class="fw-bold text-secondary mb-3"><i class="bi bi-file-earmark-medical me-2"></i>OSHA 30</h5>
                 <p class="small mb-0">Our supervisors are OSHA 30 certified, ensuring uncompromising job site safety for both crews and public.</p>
             </div>
@@ -389,35 +387,99 @@
     </div>
   </section>
 
-  <!-- ========== CASE STUDIES (New Section) ========== -->
-  <section class="section-padding">
+  <!-- ========== INDUSTRIAL FLEET & LOGISTICS (New Section) ========== -->
+  <section class="section-padding bg-alt">
     <div class="container">
-        <div class="text-center mb-5 fade-in-up">
-            <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Portfolio</span>
-            <h2 class="section-title mt-2">Enterprise <span class="text-primary">Case Studies</span></h2>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-6 fade-in-up">
-                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1512130632577-fb3289530432?fm=jpg&fit=crop&w=800&q=80" alt="University Campus" class="card-img-top" style="height:300px;object-fit:cover;">
-                    <div class="card-body p-4">
-                        <h5 class="fw-bold">State University Canopy Audit</h5>
-                        <p class="text-muted small">Comprehensive risk assessment and management of 3,500 mature trees across a 400-acre historic campus.</p>
-                        <a href="#" class="text-primary fw-bold text-decoration-none small">View Full Report <i class="bi bi-arrow-right"></i></a>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-in-up">
+            <h2 class="section-title">Heavy-Duty <span class="text-primary">Fleet & Logistics</span></h2>
+            <p class="lead">ArborPro Commercial operates the region's largest private fleet of specialized arboricultural machinery, ensuring we can handle any scale of operation.</p>
+            <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-truck fs-3 text-secondary-custom"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">100ft Aerial Lifts</h6>
+                            <p class="small text-muted mb-0">Reaching the tallest urban canopies with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-gear-wide-connected fs-3 text-secondary-custom"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Industrial Chippers</h6>
+                            <p class="small text-muted mb-0">High-volume waste processing on-site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-geo-alt-fill fs-3 text-secondary-custom"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">GPS Dispatching</h6>
+                            <p class="small text-muted mb-0">Real-time tracking of all crew movements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-shield-shaded fs-3 text-secondary-custom"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Backup Systems</h6>
+                            <p class="small text-muted mb-0">Redundant equipment to ensure zero downtime.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 fade-in-up">
-                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1542601906970-30f5d070b80f?fm=jpg&fit=crop&w=800&q=80" alt="Industrial Depot" class="card-img-top" style="height:300px;object-fit:cover;">
-                    <div class="card-body p-4">
-                        <h5 class="fw-bold">Industrial Logistics Hub Expansion</h5>
-                        <p class="text-muted small">Strategic removal and relocation of 200 specimens to facilitate a 50,000 sq ft warehouse expansion with zero env-impact penalties.</p>
-                        <a href="#" class="text-primary fw-bold text-decoration-none small">View Full Report <i class="bi bi-arrow-right"></i></a>
-                    </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+            <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?fm=jpg&fit=crop&w=800&q=80" alt="Industrial tree machinery" class="img-fluid rounded-5 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ENTERPRISE GIS CANOPY MONITORING (New Section) ========== -->
+  <section class="section-padding overflow-hidden">
+    <div class="container">
+      <div class="text-center mb-5 fade-in-up">
+        <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Digital Forestry</span>
+        <h2 class="section-title mt-2">Enterprise <span class="text-primary">GIS Canopy Monitoring</span></h2>
+        <p class="section-subtitle">Real-time data visualization for property managers and municipal planners.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 fade-in-up">
+            <div class="gis-card p-4 rounded-4 border-2 border-primary border h-100">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <div class="gis-icon bg-primary text-white p-3 rounded-3"><i class="bi bi-map-fill fs-4"></i></div>
+                    <h5 class="fw-bold mb-0">Interactive Map Interface</h5>
                 </div>
+                <p class="small text-muted">Access a bird's-eye view of your entire portfolio. Each tree is clickable, revealing its full health history and scheduled maintenance.</p>
             </div>
         </div>
+        <div class="col-lg-4 fade-in-up">
+            <div class="gis-card p-4 rounded-4 border-2 border-primary border h-100">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <div class="gis-icon bg-primary text-white p-3 rounded-3"><i class="bi bi-graph-up-arrow fs-4"></i></div>
+                    <h5 class="fw-bold mb-0">Predictive Risk Analytics</h5>
+                </div>
+                <p class="small text-muted">Our AI-driven platform analyzes weather patterns and tree health data to predict potential failure points before they become hazards.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 fade-in-up">
+            <div class="gis-card p-4 rounded-4 border-2 border-primary border h-100">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <div class="gis-icon bg-primary text-white p-3 rounded-3"><i class="bi bi-file-earmark-bar-graph fs-4"></i></div>
+                    <h5 class="fw-bold mb-0">Automated Compliance Reporting</h5>
+                </div>
+                <p class="small text-muted">Generate instant environmental impact and municipal compliance reports for stakeholder meetings and urban forestry audits.</p>
+            </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 fade-in-up">
+          <a href="dashboard.html" class="btn btn-primary-custom px-5 py-3">Explore Dashboard Demo</a>
+      </div>
     </div>
   </section>
 
@@ -451,7 +513,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="row g-4">
@@ -459,7 +520,7 @@
           <div class="footer-brand mb-3">
             <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2"> ArborPro
           </div>
-          <p class="text-light opacity-75 small">Certified experts dedicated to preserving your trees with science-based solutions and industrial precision.</p>
+          <p class="text-light opacity-75 small">Professional arborist tree care services. Certified experts dedicated to preserving and nurturing your trees with science.</p>
           <div class="social-icons d-flex gap-3 mt-3">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -467,11 +528,37 @@
             <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li><li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li><li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li><li><a href="dashboard.html"><i class="bi bi-chevron-right"></i> Dashboard</a></li></ul></div>
-        <div class="col-lg-3 col-md-6"><h5>Support</h5><ul class="footer-links"><li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Privacy</a></li><li><a href="#"><i class="bi bi-chevron-right"></i> Terms</a></li></ul></div>
-        <div class="col-lg-3 col-md-6"><h5>Newsletter</h5><p>Tree care tips and seasonal advice.</p><form class="newsletter-form"><div class="mb-2"><input type="email" class="form-control" placeholder="Your email"></div><button type="submit" class="btn btn-secondary-custom w-100"><i class="bi bi-send"></i> Subscribe</button></form></div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled footer-links small">
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+            <li class="mb-2"><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold mb-3">Support</h6>
+          <ul class="list-unstyled footer-links small">
+            <li class="mb-2"><a href="#">FAQ</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold mb-3">Newsletter</h6>
+          <p class="small text-muted mb-3">Subscribe for tree care tips and seasonal advice.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control form-control-sm" placeholder="Your email">
+              <button class="btn btn-primary-custom btn-sm" type="submit">Join</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="footer-bottom">&copy; 2026 ArborPro Tree Care Service. All rights reserved.</div>
+      <div class="footer-bottom text-center">
+        &copy; 2026 ArborPro Tree Care Service. All rights reserved.
+      </div>
     </div>
   </footer>
   <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>

@@ -14,82 +14,64 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
-  <!-- RTL and Dark Mode Icons at Top-Right -->
-  <div class="auth-top-icons">
-    <button class="btn btn-outline-custom" id="rtlToggle">RTL</button>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <i class="bi bi-moon-fill"></i>
-    </button>
-  </div>
 
-  <!-- SIGNUP FORM -->
-  <div class="container-fluid p-0">
-    <div class="row g-0 min-vh-100 flex-column-reverse flex-lg-row">
-      <div class="col-lg-6 d-flex align-items-center justify-content-center p-4">
-        <div class="auth-card" style="box-shadow:none;border:none;">
-          <div class="text-center mb-2">
-            <a href="index.html" class="text-decoration-none">
-                <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img mb-3" style="height: 64px; width: auto;">
-                <h4 class="fw-bold mt-2" style="color: var(--text);">ArborPro</h4>
-            </a>
-          </div>
-          <h2 class="text-center fw-bold" style="color: var(--text);">Create Account</h2>
-          <p class="auth-subtitle text-center fw-medium" style="color: var(--text);">Join our community of tree lovers</p>
-          <form>
-            <div class="mb-3">
-              <label class="form-label fw-bold" style="color: var(--text);">Full Name</label>
-              <input type="text" class="form-control" placeholder="John Doe" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label fw-bold" style="color: var(--text);">Email Address</label>
-              <input type="email" class="form-control" placeholder="you@example.com" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label fw-bold" style="color: var(--text);">Password</label>
-              <div class="input-group">
-                <input type="password" class="form-control" placeholder="Create a password" id="signupPassword" required>
-                <button class="btn border password-toggle" type="button" style="border-color:var(--border);"><i class="bi bi-eye"></i></button>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label fw-bold" style="color: var(--text);">Confirm Password</label>
-              <div class="input-group">
-                <input type="password" class="form-control" placeholder="Confirm your password" id="signupConfirm" required>
-                <button class="btn border password-toggle" type="button" style="border-color:var(--border);"><i class="bi bi-eye"></i></button>
-              </div>
-            </div>
-            <div class="form-check mb-3">
-              <input type="checkbox" class="form-check-input" id="agreeTerms" required>
-              <label class="form-check-label" for="agreeTerms" style="font-size:.9rem; color: var(--text);">
-                I agree to the <a href="#" class="text-primary hover-underline" style="font-weight:700;">Terms</a> and <a href="#" class="text-primary hover-underline" style="font-weight:700;">Privacy</a>
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary-custom w-100 justify-content-center">
-              Create Account
-            </button>
-          </form>
-          <div class="divider"><span>or sign up with</span></div>
-          <div class="social-login">
-            <a href="#" title="Google" class="text-danger border-danger-subtle"><i class="bi bi-google"></i></a>
-            <a href="#" title="Apple" class="border-dark-subtle" style="color: var(--text);"><i class="bi bi-apple"></i></a>
-            <a href="#" title="Facebook" class="text-primary border-primary-subtle"><i class="bi bi-facebook"></i></a>
-          </div>
-          <p class="text-center mt-4 mb-0" style="font-size:.95rem; color: var(--text);">
-            Already have an account? <a href="login.html" class="text-primary fw-bold hover-underline">Login</a>
-          </p>
-        </div>
+  <div class="auth-wrapper d-flex align-items-center justify-content-center min-vh-100 py-5" style="background: var(--tertiary-dark);">
+    <div class="auth-card position-relative border-0" style="background: var(--surface); box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+      <!-- Auth Toggles Inner -->
+      <div class="d-flex gap-2 position-absolute" style="top: 20px; right: 20px;">
+        <button class="theme-toggle btn-sm btn btn-outline-custom p-0 d-flex align-items-center justify-content-center" id="themeToggle" style="width:36px; height:36px;"><i class="bi bi-moon-fill"></i></button>
+        <button class="btn btn-sm btn-outline-custom p-0 d-flex align-items-center justify-content-center" id="rtlToggle" style="width:36px; height:36px; font-size:0.75rem;">RTL</button>
       </div>
-      <div class="col-lg-6 auth-split-img">
-        <div class="text-center fade-in-up" style="max-width:400px;">
-          <i class="bi bi-globe-americas fs-1 text-secondary-custom"></i>
-          <h3 class="fw-bold text-white mt-3">Be Part of the Solution</h3>
-          <p class="mt-4 text-white-50">Every tree we care for contributes to a healthier, cooler, and more sustainable community.</p>
-          <div class="mt-5 d-flex flex-column gap-3 align-items-start">
-            <div class="d-flex align-items-center gap-3"><i class="bi bi-check-circle text-secondary-custom"></i> <span>Manage all properties in one place</span></div>
-            <div class="d-flex align-items-center gap-3"><i class="bi bi-check-circle text-secondary-custom"></i> <span>Access digital health reports 24/7</span></div>
-            <div class="d-flex align-items-center gap-3"><i class="bi bi-check-circle text-secondary-custom"></i> <span>Priority scheduling for members</span></div>
-          </div>
+      <div class="text-center mb-4">
+        <a class="navbar-brand d-inline-flex align-items-center justify-content-center text-decoration-none" href="index.html" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--primary); gap: 10px;">
+          <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img" style="height: 32px; width: auto;">
+          <span>ArborPro</span>
+        </a>
+      </div>
+
+      <div class="text-center mb-4">
+        <h2 class="fw-bold h3 mb-1">Create Account</h2>
+        <p class="text-muted small">Join our community of tree lovers.</p>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Full Name</label>
+          <input type="text" class="form-control" placeholder="John Doe" required>
         </div>
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Email Address</label>
+          <input type="email" class="form-control" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Password</label>
+          <input type="password" class="form-control" placeholder="Create a password" required>
+        </div>
+        <div class="mb-4">
+          <label class="form-label small fw-bold">Confirm Password</label>
+          <input type="password" class="form-control" placeholder="Confirm your password" required>
+        </div>
+        
+        <div class="form-check mb-4">
+          <input type="checkbox" class="form-check-input" id="agree" required>
+          <label class="form-check-label small" for="agree">I agree to the <a href="#" class="text-primary-custom fw-bold text-decoration-none">Terms</a> and <a href="#" class="text-primary-custom fw-bold text-decoration-none">Privacy</a></label>
+        </div>
+
+        <div class="text-center mb-4">
+          <button type="submit" class="btn btn-primary-custom py-3 px-5 rounded-pill fw-bold">Create Account</button>
+        </div>
+      </form>
+
+      <div class="divider"><span>OR SIGN UP WITH</span></div>
+
+      <div class="social-login mb-4">
+        <a href="#" class="btn btn-outline-light border rounded-pill flex-grow-1 py-2"><i class="bi bi-google text-dark"></i></a>
+        <a href="#" class="btn btn-outline-light border rounded-pill flex-grow-1 py-2"><i class="bi bi-apple text-dark"></i></a>
+        <a href="#" class="btn btn-outline-light border rounded-pill flex-grow-1 py-2"><i class="bi bi-facebook text-dark"></i></a>
+      </div>
+
+      <div class="text-center small mt-4">
+        Already have an account? <a href="login.html" class="text-primary-custom fw-bold text-decoration-none">Login</a>
       </div>
     </div>
   </div>

@@ -17,17 +17,17 @@
   <!-- SIDEBAR -->
   <aside class="sidebar bg-dark" id="sidebar">
     <button class="sidebar-close text-white" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
-    <div class="sidebar-brand text-white border-bottom border-secondary mb-3 p-3">
-      <a href="index.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
-        <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2" style="filter: brightness(0) invert(1);">
-        <span class="fw-bold" style="font-size:1.4rem;">ArborPro</span>
+    <div class="sidebar-brand text-white border-bottom border-secondary">
+      <a href="index.html" class="navbar-brand d-flex align-items-center p-3 text-white text-decoration-none" style="gap: 10px;">
+        <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img" style="filter: brightness(0) invert(1); height: 32px; width: auto;">
+        <span class="fw-bold" style="font-size:1.6rem; letter-spacing: -0.5px; font-family: var(--font-heading);">ArborPro</span>
       </a>
     </div>
     <ul class="sidebar-nav list-unstyled p-0 m-0">
       <li class="nav-label text-secondary-custom opacity-75 ps-3 small text-uppercase fw-bold mb-2" style="letter-spacing:1px;">Main Site</li>
-      <li><a href="index.html" class="text-white-50"><i class="bi bi-house me-2"></i> Home</a></li>
+      <li><a href="index.html" class="text-white-50"><i class="bi bi-house me-2"></i> Home 1</a></li>
+      <li><a href="home2.html" class="text-white-50"><i class="bi bi-building me-2"></i> Home 2</a></li>
       <li><a href="services.html" class="text-white-50"><i class="bi bi-gear me-2"></i> Services</a></li>
-      <li><a href="home2.html" class="text-white-50"><i class="bi bi-building me-2"></i> Residential</a></li>
       <li><a href="about.html" class="text-white-50"><i class="bi bi-info-circle me-2"></i> About Us</a></li>
       <li><a href="contact.html" class="text-white-50"><i class="bi bi-envelope me-2"></i> Contact Us</a></li>
       
@@ -62,7 +62,10 @@
           <i class="bi bi-bell fs-5"></i>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white" style="font-size: .6rem; padding: .25rem .45rem;">3</span>
         </button>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-outline-custom btn-sm px-3 d-none d-lg-flex" id="rtlToggle" aria-label="Toggle RTL" style="height:40px; border-radius:12px;">RTL</button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
+        </div>
         <div class="d-flex align-items-center gap-3 ps-3 border-start">
           <div class="d-none d-md-block text-end">
             <div class="fw-bold text-dark" style="font-size:.9rem; line-height: 1;">Sarah Johnson</div>
@@ -339,8 +342,11 @@
       </section>
     </div>
   </div>
-  <footer>
-  </footer>
+    <!-- Dashboard Footer -->
+    <div class="text-center py-4 border-top mt-5 small text-muted">
+      &copy; 2026 ArborPro Property Manager. All rights reserved.
+    </div>
+  </div>
 
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
