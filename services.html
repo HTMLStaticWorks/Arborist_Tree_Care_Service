@@ -22,6 +22,8 @@
         <i class="bi bi-moon-fill"></i>
       </button>
 
+      <button class="btn btn-outline-custom d-lg-none me-2 p-0 d-flex align-items-center justify-content-center" id="rtlToggleMobileMain" aria-label="Toggle RTL" style="width:40px; height:40px; border-radius:50%; font-size:0.75rem; font-weight:700;">RTL</button>
+
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
         <i class="bi bi-list fs-4"></i>
       </button>
@@ -53,17 +55,16 @@
     </div>
     <div class="offcanvas-body d-flex flex-column">
       <ul class="nav flex-column mb-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
-        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
-        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" data-page="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home2.html" data-page="home2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html" data-page="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-page="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html" data-page="dashboard.html">Dashboard</a></li>
       </ul>
       <div class="d-grid gap-3 pt-4 border-top">
         <div class="d-flex gap-2">
-          <button class="btn btn-outline-custom w-100 btn-navbar-mobile" id="rtlToggleMobile">Toggle RTL</button>
-          <button class="theme-toggle btn-navbar-mobile" id="themeToggleMobile" style="width:50px; flex-shrink:0;"><i class="bi bi-moon-fill"></i></button>
+          <button class="theme-toggle btn-navbar-mobile" id="themeToggleMobile" style="width:100%;"><i class="bi bi-moon-fill me-2"></i> Toggle Theme</button>
         </div>
         <a href="login.html" class="btn btn-login btn-navbar-mobile">Login</a>
         <a href="signup.html" class="btn btn-signup btn-navbar-mobile">Sign Up</a>
@@ -88,7 +89,7 @@
         <div class="col-lg-7 text-center text-lg-start">
           <span class="text-secondary-custom fw-bold text-uppercase d-block mb-1" style="letter-spacing:2px;font-size:.85rem;">Professional Tree Care</span>
           <h2 class="section-title mt-2">Comprehensive <span class="text-primary">Arborist Services</span></h2>
-          <p class="section-subtitle fw-medium" style="color: var(--text);">From routine maintenance to emergency response, we cover every aspect of tree care with scientific precision and heavy equipment capabilities.</p>
+          <p class="section-subtitle text-muted">From routine maintenance to emergency response, we cover every aspect of tree care with scientific precision and heavy equipment capabilities.</p>
         </div>
         <div class="col-lg-5 text-center d-none d-lg-block">
           <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?fm=jpg&fit=crop&w=600&q=80" alt="Arborist Gear" class="img-fluid rounded-4 shadow">
@@ -99,22 +100,22 @@
         <div class="col-lg-4 col-md-6 fade-in-up">
           <div class="service-card shadow-sm h-100 border-0 rounded-4 overflow-hidden" style="background:var(--surface);">
             <div style="height:220px; overflow:hidden;">
-              <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?fm=jpg&fit=crop&w=800&q=80" alt="Tree Pruning" class="w-100 h-100 object-fit-cover">
+              <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?fm=jpg&fit=crop&w=800&q=80" alt="Tree Pruning" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="p-4">
               <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="fw-bold mb-0">Structural Pruning</h5>
                 <span class="badge bg-primary-subtle text-primary rounded-pill px-3">Essential</span>
               </div>
-              <p class="fw-medium" style="color: var(--text);">ISA-standard pruning to improve health and safety while enhancing natural beauty.</p>
-              <ul class="list-unstyled mb-4" style="color: var(--text);">
+              <p class="text-muted">ISA-standard pruning to improve health and safety while enhancing natural beauty.</p>
+              <ul class="list-unstyled mb-4 text-muted">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Crown Thinning & Elevation</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Deadwood & Hazard Removal</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Directional Structural Training</li>
               </ul>
               <div class="text-center pt-3 border-top">
                 <div class="fw-bold text-primary mb-2 fs-5">$150 - $450</div>
-                <a href="contact.html" class="btn btn-outline-custom w-100 rounded-pill">Enquire</a>
+                <a href="contact.html" class="btn btn-outline-custom rounded-pill px-4">Enquire</a>
               </div>
             </div>
           </div>
@@ -130,15 +131,15 @@
                 <h5 class="fw-bold mb-0">Expert Removal</h5>
                 <span class="badge bg-danger-subtle text-danger rounded-pill px-3">High Tech</span>
               </div>
-              <p class="fw-medium" style="color: var(--text);">Scientific removal of hazardous or unwanted trees using advanced rigging and crane techniques.</p>
-              <ul class="list-unstyled mb-4" style="color: var(--text);">
+              <p class="text-muted">Scientific removal of hazardous or unwanted trees using advanced rigging and crane techniques.</p>
+              <ul class="list-unstyled mb-4 text-muted">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Technical Aerial Rigging</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Crane-Assisted Dismantling</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Total Site Remediation</li>
               </ul>
               <div class="text-center pt-3 border-top">
                 <div class="fw-bold text-primary mb-2 fs-5">$600 - $2500+</div>
-                <a href="contact.html" class="btn btn-outline-custom w-100 rounded-pill">Enquire</a>
+                <a href="contact.html" class="btn btn-outline-custom rounded-pill px-4">Enquire</a>
               </div>
             </div>
           </div>
@@ -154,15 +155,15 @@
                 <h5 class="fw-bold mb-0">Plant Pathology</h5>
                 <span class="badge bg-success-subtle text-success rounded-pill px-3">Certified</span>
               </div>
-              <p class="fw-medium" style="color: var(--text);">Detailed clinical diagnosis and treatment plans by certified plant health specialists.</p>
-              <ul class="list-unstyled mb-4" style="color: var(--text);">
+              <p class="text-muted">Detailed clinical diagnosis and treatment plans by certified plant health specialists.</p>
+              <ul class="list-unstyled mb-4 text-muted">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Soil & Leaf Nutrient Analysis</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Pest & Disease ID + Treatment</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Sonic Tomography Testing</li>
               </ul>
               <div class="text-center pt-3 border-top">
                 <div class="fw-bold text-primary mb-2 fs-5">$200 - $800</div>
-                <a href="contact.html" class="btn btn-outline-custom w-100 rounded-pill">Enquire</a>
+                <a href="contact.html" class="btn btn-outline-custom rounded-pill px-4">Enquire</a>
               </div>
             </div>
           </div>
@@ -192,7 +193,9 @@
               <li class="mb-2"><i class="bi bi-check text-primary-custom me-2"></i>Seasonal Fertilization</li>
               <li class="text-muted"><i class="bi bi-x text-danger me-2"></i>Hazardous Removal</li>
             </ul>
-            <a href="signup.html" class="btn btn-secondary-custom w-100">Select Plan</a>
+            <div class="text-center">
+              <a href="signup.html" class="btn btn-secondary-custom px-4 rounded-pill">Select Plan</a>
+            </div>
           </div>
         </div>
         <div class="col-lg-4 fade-in-up">
@@ -208,7 +211,9 @@
               <li class="mb-2"><i class="bi bi-check text-primary-custom me-2"></i>Pest & Disease Treatment</li>
               <li class="mb-2"><i class="bi bi-check text-primary-custom me-2"></i>Soil Remediation Plans</li>
             </ul>
-            <a href="signup.html" class="btn btn-primary-custom w-100">Select Plan</a>
+            <div class="text-center">
+              <a href="signup.html" class="btn btn-primary-custom px-4 rounded-pill">Select Plan</a>
+            </div>
           </div>
         </div>
         <div class="col-lg-4 fade-in-up">
@@ -223,7 +228,9 @@
               <li class="mb-2"><i class="bi bi-check text-primary-custom me-2"></i>Full Landscape Resilience Plan</li>
               <li class="mb-2"><i class="bi bi-check text-primary-custom me-2"></i>24/7 Priority Consultations</li>
             </ul>
-            <a href="signup.html" class="btn btn-secondary-custom w-100">Contact Us</a>
+            <div class="text-center">
+              <a href="signup.html" class="btn btn-secondary-custom px-4 rounded-pill">Contact Us</a>
+            </div>
           </div>
         </div>
       </div>
@@ -264,7 +271,7 @@
             <p class="mb-4 text-white-50">Snap a picture of your tree and our AI arborist will provide a preliminary health and service estimate within minutes.</p>
             <div class="d-flex justify-content-center">
                 <a href="dashboard.html" class="btn btn-secondary-custom btn-lg px-5 py-3 rounded-pill shadow">
-                    <i class="bi bi-rocket-takeoff me-2"></i> Open Property Manager
+                    <i class="bi bi-camera me-2"></i> Upload a Photo
                 </a>
             </div>
           </div>

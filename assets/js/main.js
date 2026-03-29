@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function setTheme(theme) {
     htmlEl.setAttribute('data-theme', theme);
+    htmlEl.setAttribute('data-bs-theme', theme);
     localStorage.setItem('arborist-theme', theme);
     updateToggleIcons(theme);
   }
@@ -69,10 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Active Nav Link & Sidebar ---------- */
   const currentPagePath = window.location.pathname.split('/').pop() || 'index.html';
   
-  // Public Navbar
+  // Public Navbar & Offcanvas Mobile Menu — set active state based on current page
   document.querySelectorAll('.nav-link[data-page]').forEach(function (link) {
-    if (link.getAttribute('data-page') === currentPagePath) {
+    const page = link.getAttribute('data-page');
+    if (page === currentPagePath) {
       link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 
@@ -191,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- RTL Toggle ---------- */
   const rtlToggle = document.getElementById('rtlToggle');
   const rtlToggleMobile = document.getElementById('rtlToggleMobile');
+  const rtlToggleMobileMain = document.getElementById('rtlToggleMobileMain');
 
   function setRTL(isRTL) {
     if (isRTL) {
@@ -204,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function updateRTLButtons(isRTL) {
-    [rtlToggle, rtlToggleMobile].forEach(btn => {
+    [rtlToggle, rtlToggleMobile, rtlToggleMobileMain].forEach(btn => {
       if (btn) {
         btn.textContent = isRTL ? 'LTR' : 'RTL';
         btn.classList.toggle('active', isRTL);
@@ -215,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const savedRTL = localStorage.getItem('arborist-rtl') === 'true';
   setRTL(savedRTL);
 
-  [rtlToggle, rtlToggleMobile].forEach(btn => {
+  [rtlToggle, rtlToggleMobile, rtlToggleMobileMain].forEach(btn => {
     if (btn) {
       btn.addEventListener('click', function () {
         const isRtl = htmlEl.getAttribute('dir') === 'rtl';
