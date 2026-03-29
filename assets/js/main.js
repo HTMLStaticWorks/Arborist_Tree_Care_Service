@@ -66,11 +66,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- Active Nav Link ---------- */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  /* ---------- Active Nav Link & Sidebar ---------- */
+  const currentPagePath = window.location.pathname.split('/').pop() || 'index.html';
+  
+  // Public Navbar
   document.querySelectorAll('.nav-link[data-page]').forEach(function (link) {
-    if (link.getAttribute('data-page') === currentPage) {
+    if (link.getAttribute('data-page') === currentPagePath) {
       link.classList.add('active');
+    }
+  });
+
+  // Dashboard Sidebar
+  document.querySelectorAll('.sidebar-nav a').forEach(function (link) {
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentPagePath) {
+      link.classList.add('active');
+      link.classList.remove('text-white-50');
     }
   });
 
