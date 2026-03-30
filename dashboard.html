@@ -167,33 +167,90 @@
       <section class="mb-4">
         <div class="row g-3">
           <div class="col-lg-8">
-            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-              <h6 class="fw-bold mb-3"><i class="bi bi-bar-chart-line me-2 text-primary-custom"></i>Work Order Trends</h6>
-              <div style="display:flex;gap:8px;align-items:flex-end;height:200px;padding-top:20px;">
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:60%;"></div><small class="text-muted" style="font-size:.7rem;">Jan</small>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;height:100%;">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h6 class="fw-bold mb-0 text-dark opacity-100"><i class="bi bi-bar-chart-line me-2 text-primary-custom"></i>Work Order Trends</h6>
+                <span class="badge bg-success-subtle text-success rounded-pill px-3 py-1 fw-bold" style="font-size:0.75rem;"><i class="bi bi-graph-up-arrow me-1"></i> +15.4% YoY</span>
+              </div>
+              
+              <div class="position-relative d-flex" style="height: 220px; padding-top: 30px;">
+                <!-- Y-Axis Markers -->
+                <div class="d-flex flex-column justify-content-between text-muted h-100 pe-3 border-end" style="font-size: 0.65rem; font-weight: 700; width: 40px; margin-bottom: 25px;">
+                  <span>100</span>
+                  <span>75</span>
+                  <span>50</span>
+                  <span>25</span>
+                  <span class="mb-2">0</span>
                 </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:75%;"></div><small class="text-muted" style="font-size:.7rem;">Feb</small>
+                
+                <!-- Chart Bars Container -->
+                <div class="d-flex flex-grow-1 align-items-baseline gap-2 gap-md-3 px-2 h-100" style="padding-bottom: 25px;">
+                  <!-- Jan -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 60%; transition: var(--transition); cursor: pointer;" title="Jan: 60 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">60</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Jan</small>
+                  </div>
+                  <!-- Feb -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 75%; transition: var(--transition); cursor: pointer;" title="Feb: 75 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">75</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Feb</small>
+                  </div>
+                  <!-- Mar -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 45%; transition: var(--transition); cursor: pointer;" title="Mar: 45 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">45</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Mar</small>
+                  </div>
+                  <!-- Apr -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 90%; transition: var(--transition); cursor: pointer;" title="Apr: 90 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">90</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Apr</small>
+                  </div>
+                  <!-- May (Secondary Brand Color Highlight) -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-secondary rounded-top-2 position-relative shadow-sm" style="height: 100%; transition: var(--transition); cursor: pointer;" title="May Peak: 100 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-secondary-dark" style="font-size:0.7rem;">100</span>
+                    </div>
+                    <small class="text-secondary-dark fw-bold" style="font-size:0.65rem;">May</small>
+                  </div>
+                  <!-- Jun -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 70%; transition: var(--transition); cursor: pointer;" title="Jun: 70 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">70</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Jun</small>
+                  </div>
+                  <!-- Jul -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 55%; transition: var(--transition); cursor: pointer;" title="Jul: 55 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">55</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Jul</small>
+                  </div>
+                  <!-- Aug -->
+                  <div class="flex-grow-1 d-flex flex-column align-items-center h-100 justify-content-end gap-2">
+                    <div class="w-100 bg-primary opacity-75 rounded-top-2 position-relative" style="height: 80%; transition: var(--transition); cursor: pointer;" title="Aug: 80 Orders">
+                      <span class="position-absolute bottom-100 start-50 translate-middle-x mb-1 small fw-bold text-dark opacity-75" style="font-size:0.65rem;">80</span>
+                    </div>
+                    <small class="text-muted fw-bold" style="font-size:0.65rem;">Aug</small>
+                  </div>
                 </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:45%;"></div><small class="text-muted" style="font-size:.7rem;">Mar</small>
+              </div>
+              
+              <!-- Legend/Summary Footer -->
+              <div class="mt-2 pt-3 border-top d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center gap-1"><span style="width:10px;height:10px;background:var(--primary);border-radius:50%;display:inline-block;"></span><small class="text-muted fw-medium">Scheduled</small></div>
+                  <div class="d-flex align-items-center gap-1"><span style="width:10px;height:10px;background:var(--secondary);border-radius:50%;display:inline-block;"></span><small class="text-muted fw-medium">Peak Season</small></div>
                 </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:90%;"></div><small class="text-muted" style="font-size:.7rem;">Apr</small>
-                </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--secondary);border-radius:4px 4px 0 0;height:100%;"></div><small class="text-muted" style="font-size:.7rem;">May</small>
-                </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:70%;"></div><small class="text-muted" style="font-size:.7rem;">Jun</small>
-                </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:55%;"></div><small class="text-muted" style="font-size:.7rem;">Jul</small>
-                </div>
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-                  <div style="width:100%;background:var(--primary);border-radius:4px 4px 0 0;height:80%;"></div><small class="text-muted" style="font-size:.7rem;">Aug</small>
-                </div>
+                <p class="mb-0 text-muted extra-small" style="font-size: 0.7rem;">Average Response Time: <strong class="text-dark">4.2h</strong></p>
               </div>
             </div>
           </div>
