@@ -307,44 +307,15 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 6px 20px rgba(27,94,32,.25);
 }
 
-/* Hero Button Enhancements */
-.hero-btns .btn {
-  border-radius: 50px;
-  letter-spacing: 0.5px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 60px;
-  padding: 0 30px !important;
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
-}
-
-.hero-btns .btn:hover {
-  transform: translateY(-5px) scale(1.02);
-}
-
-.hero-btns .btn-outline-light {
-  border: 2px solid rgba(255,255,255,0.8);
-  background: transparent;
-  color: #fff;
-}
-
-.hero-btns .btn-outline-light:hover {
-  background: #fff;
-  color: var(--primary);
-  border-color: #fff;
-  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
-}
-
-/* Ensure equal widths and heights in mobile for hero buttons */
+/* Responsive Hero Buttons */
 @media (max-width: 575.98px) {
   .hero-btns {
+    flex-direction: column;
     width: 100%;
     padding: 0 20px;
   }
   .hero-btns .btn {
-    max-width: 100% !important;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -578,18 +549,47 @@ img { max-width: 100%; height: auto; }
   border-right-color: var(--secondary);
 }
 
-/* ---------- CTA Button Size Equalization ---------- */
-.cta-banner .hero-btns .btn,
+/* Hero Button container */
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
 .hero-btns .btn {
-  width: 280px;
-  max-width: 100%;
-  height: 60px;
-  padding: 0 30px !important;
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
+  width: 250px; /* Consistent fixed width */
+  height: 56px; /* Consistent fixed height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-radius: 12px; /* Matching screenshot's rounded rectangle look */
+  text-transform: none;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-width: 2px !important;
-  border-radius: 50px;
+  padding: 0 20px !important;
   box-sizing: border-box;
+}
+
+.hero-btns .btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-btns .btn-outline-light {
+  border-color: rgba(255,255,255,0.8);
+  color: #fff;
+  background: transparent;
+}
+
+.hero-btns .btn-outline-light:hover {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
 }
 .offcanvas-custom .d-grid .btn {
   margin-top: 15px;
