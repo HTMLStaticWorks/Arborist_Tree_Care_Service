@@ -84,7 +84,7 @@
           <span class="badge bg-primary text-white mb-3 px-3 py-2 rounded-pill fw-bold">Enterprise Solutions</span>
           <h1 class="display-4 fw-bold mb-4">Commercial & Municipal <br><span class="text-secondary">Arboriculture Excellence</span></h1>
           <p class="lead mx-auto mb-5 text-white"><span class="text-secondary fw-bold">Home 2 —</span> High-volume canopy management for campuses, parks, and industrial sites. We provide scalable expert care with full regulatory compliance and zero operational downtime.</p>
-          <div class="hero-btns">
+          <div class="hero-btns d-flex flex-wrap gap-3 mt-4 justify-content-center">
             <a href="services.html" class="btn btn-primary-custom">View Solutions</a>
             <a href="#compliance" class="btn btn-outline-light">Book Corporate Audit</a>
           </div>
@@ -123,7 +123,7 @@
         <div class="col-lg-6 fade-in-up">
           <div class="position-relative">
             <img src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?fm=jpg&fit=crop&w=800&q=80" alt="Arborist at work" class="img-fluid rounded-4 shadow-lg">
-            <div class="position-absolute bottom-0 end-0 bg-primary-custom text-white p-4 rounded-4 shadow m-4 d-none d-md-block" style="max-width:200px;">
+            <div class="position-absolute bottom-0 end-0 bg-primary-custom text-white p-4 rounded-4 shadow m-4 d-block" style="max-width:200px; z-index: 10;">
               <h4 class="fw-bold mb-1">$5M</h4>
               <p class="small mb-0">Fully Bonded & Insured for Industrial Sites.</p>
             </div>
@@ -186,11 +186,11 @@
   <section class="hero-split section-padding">
     <div class="container">
       <div class="row align-items-center g-5">
-        <div class="col-lg-6 hero-split-content fade-in-up">
+        <div class="col-lg-6 hero-split-content fade-in-up text-center text-lg-start">
           <span class="badge rounded-pill px-3 py-2 fw-semibold mb-3" style="background:rgba(27,94,32,.1);color:var(--primary);"><i class="bi bi-patch-check-fill me-1"></i> Trusted by 1,200+ Clients</span>
           <h1>Enterprise Scale <span>Certified Care</span></h1>
           <p class="text-muted fs-5 mb-4">ArborPro manages the urban forest for corporate campuses, universities, and municipalities. Our crews are trained for high-volume, precision operations with minimal site impact.</p>
-          <div class="d-flex flex-wrap gap-3">
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
             <a href="services.html" class="btn btn-primary-custom"><i class="bi bi-arrow-right-circle"></i> View Services</a>
             <a href="#expertise" class="btn btn-outline-custom"><i class="bi bi-info-circle"></i> Our Expertise</a>
           </div>
@@ -198,7 +198,11 @@
         <div class="col-lg-6 fade-in-up">
           <div class="hero-split-img" style="height:480px;position:relative;">
             <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?fm=jpg&fit=crop&w=800&q=80" alt="Municipal canopy" class="w-100 h-100 object-fit-cover rounded-4 shadow-lg">
-            <div style="position:absolute;bottom:20px;left:20px;background:var(--secondary);color:#fff;padding:16px 24px;border-radius:var(--radius);font-weight:600;"><i class="bi bi-shield-check me-2"></i> ISA Certified Experts</div>
+            <div class="position-absolute bottom-0 end-0 bg-primary-custom text-white p-4 rounded-4 shadow m-4 d-block" style="max-width:200px; z-index: 10;">
+              <h4 class="fw-bold mb-1">$5M</h4>
+              <p class="small mb-0">Fully Bonded & Insured for Industrial Sites.</p>
+            </div>
+            <div style="position:absolute;bottom:20px;left:20px;background:var(--secondary);color:#fff;padding:16px 24px;border-radius:var(--radius);font-weight:600;z-index: 5;"><i class="bi bi-shield-check me-2"></i> ISA Certified Experts</div>
           </div>
         </div>
       </div>
@@ -397,8 +401,9 @@
   </section>
 
   <!-- ========== SAFETY & SCIENCE ========== -->
-  <section id="safety" class="section-padding bg-alt">
-    <div class="container">
+  <section id="safety" class="section-padding bg-alt position-relative overflow-hidden">
+    <div class="position-absolute top-0 end-0 w-50 h-100 d-none d-lg-block opacity-25" style="background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?fm=jpg&fit=crop&w=1000&q=80') no-repeat center center / cover; clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+    <div class="container position-relative" style="z-index:2;">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6 fade-in-up">
           <div class="bg-primary-custom text-white p-5 rounded-4 shadow-lg">
@@ -424,27 +429,27 @@
           <p>We partner with local universities to study tree resiliency in changing climates. Our "Science of Trees" program ensures that every project contributes to a larger database of urban forest health.</p>
           <div class="row mt-4 g-3">
             <div class="col-6">
-              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+              <div class="p-3 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift bg-white bg-opacity-75">
                 <i class="bi bi-thermometer-half text-primary-custom fs-2 mb-2"></i>
-                <h6 class="mb-0 text-secondary-custom fw-bold">Climate Adaptability</h6>
+                <h6 class="mb-0 text-secondary-custom fw-bold" style="font-size:0.9rem;">Climate Adaptability</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+              <div class="p-3 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift bg-white bg-opacity-75">
                 <i class="bi bi-droplet-fill text-primary-custom fs-2 mb-2"></i>
-                <h6 class="mb-0 text-secondary-custom fw-bold">Hydration Analysis</h6>
+                <h6 class="mb-0 text-secondary-custom fw-bold" style="font-size:0.9rem;">Hydration Analysis</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+              <div class="p-3 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift bg-white bg-opacity-75">
                 <i class="bi bi-bug text-primary-custom fs-2 mb-2"></i>
-                <h6 class="mb-0 text-secondary-custom fw-bold">Pest Resiliency</h6>
+                <h6 class="mb-0 text-secondary-custom fw-bold" style="font-size:0.9rem;">Pest Resiliency</h6>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-4 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift">
+              <div class="p-3 border rounded-4 text-center h-100 d-flex flex-column align-items-center justify-content-center shadow-sm transition-all hover-lift bg-white bg-opacity-75">
                 <i class="bi bi-node-plus text-primary-custom fs-2 mb-2"></i>
-                <h6 class="mb-0 text-secondary-custom fw-bold">Structural Integrity</h6>
+                <h6 class="mb-0 text-secondary-custom fw-bold" style="font-size:0.9rem;">Structural Integrity</h6>
               </div>
             </div>
           </div>
@@ -454,7 +459,7 @@
   </section>
 
   <!-- REVIEWS -->
-  <section class="section-padding">
+  <section class="section-padding overflow-hidden">
     <div class="container">
       <div class="text-center fade-in-up">
         <span class="text-secondary-custom fw-bold text-uppercase" style="letter-spacing:2px;font-size:.85rem;">Reviews</span>
@@ -464,11 +469,11 @@
       <div class="row g-4">
         <div class="col-lg-6 fade-in-up">
           <div class="testimonial-card">
-            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <div class="stars" style="color:#FF9F00;"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
             <p class="quote">"Managing 50 properties, I need a partner I can trust. ArborPro's reports are thorough and their work is flawless."</p>
             <div class="client-info">
               <div class="client-avatar overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06eec?fm=jpg&fit=crop&w=100&h=100&q=80" alt="Daniel Wallace" class="w-100 h-100 object-fit-cover">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fm=jpg&fit=crop&w=400&h=400&q=80" alt="Daniel Wallace" class="w-100 h-100 object-fit-cover">
               </div>
               <div>
                 <div class="client-name">Daniel Wallace</div>
@@ -479,11 +484,11 @@
         </div>
         <div class="col-lg-6 fade-in-up">
           <div class="testimonial-card">
-            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <div class="stars" style="color:#FF9F00;"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
             <p class="quote">"The disease management program saved dozens of mature elms on our campus. Scientific approach unmatched."</p>
             <div class="client-info">
               <div class="client-avatar overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?fm=jpg&fit=crop&w=100&h=100&q=80" alt="Lisa Hernandez" class="w-100 h-100 object-fit-cover">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fm=jpg&fit=crop&w=400&h=400&q=80" alt="Lisa Hernandez" class="w-100 h-100 object-fit-cover">
               </div>
               <div>
                 <div class="client-name">Lisa Hernandez</div>

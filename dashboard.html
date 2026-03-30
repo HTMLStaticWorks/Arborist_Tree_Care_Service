@@ -14,54 +14,28 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
-  <!-- SIDEBAR -->
-  <aside class="sidebar bg-dark" id="sidebar">
-    <button class="sidebar-close text-white" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
-    <div class="sidebar-brand text-white border-bottom border-secondary">
-      <a href="index.html" class="navbar-brand d-flex align-items-center p-3 text-white text-decoration-none" style="gap: 10px;">
-        <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img" style="height: 32px; width: auto;">
-        <span class="fw-bold" style="font-size:1.6rem; letter-spacing: -0.5px; font-family: var(--font-heading);">ArborPro</span>
-      </a>
-    </div>
-    <ul class="sidebar-nav list-unstyled p-0 m-0">
-      <li class="nav-label text-secondary-custom opacity-75 ps-3 small text-uppercase fw-bold mb-2" style="letter-spacing:1px;">Main Site</li>
-      <li><a href="index.html" class="text-white-50"><i class="bi bi-house me-2"></i> Home 1</a></li>
-      <li><a href="home2.html" class="text-white-50"><i class="bi bi-building me-2"></i> Home 2</a></li>
-      <li><a href="services.html" class="text-white-50"><i class="bi bi-gear me-2"></i> Services</a></li>
-      <li><a href="about.html" class="text-white-50"><i class="bi bi-info-circle me-2"></i> About Us</a></li>
-      <li><a href="contact.html" class="text-white-50"><i class="bi bi-envelope me-2"></i> Contact Us</a></li>
-      <li><a href="dashboard.html" class="text-white-50"><i class="bi bi-grid me-2"></i> Dashboard</a></li>
-      
-      <li class="nav-label text-secondary-custom opacity-75 ps-3 small text-uppercase fw-bold mt-4 mb-2" style="letter-spacing:1px;">Management</li>
 
-      <li><a href="#users" class="text-white-50"><i class="bi bi-people me-2"></i> Team Access</a></li>
-
-      
-      <li class="nav-label text-secondary-custom opacity-75 ps-3 small text-uppercase fw-bold mt-4 mb-2" style="letter-spacing:1px;">Tree Inventory</li>
-      <li><a href="#inventory" class="text-white-50"><i class="bi bi-map me-2"></i> Map View</a></li>
-      <li><a href="#health" class="text-white-50"><i class="bi bi-heart-pulse me-2"></i> Health Monitoring</a></li>
-      
-      <li class="nav-label text-secondary-custom opacity-75 ps-3 small text-uppercase fw-bold mt-4 mb-2" style="letter-spacing:1px;">Account</li>
-      <li><a href="#" class="text-white-50"><i class="bi bi-gear me-2"></i> Settings</a></li>
-      <li><a href="index.html" class="text-white-50"><i class="bi bi-box-arrow-left me-2"></i> Logout</a></li>
-    </ul>
-    <div class="pb-5"></div>
-  </aside>
-  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
   <!-- MAIN -->
+<div class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-brand text-decoration-none" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--primary) !important; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img me-2" style="height: 32px; width: auto;"> ArborPro
+  </a>
+  <button class="sidebar-close" id="sidebarClose">&times;</button>
+  <ul class="sidebar-nav">
+    <li><a href="dashboard.html" class="active"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+    <li><a href="#inventory"><i class="bi bi-clipboard-data"></i> Inventory</a></li>
+    <li><a href="#schedule"><i class="bi bi-calendar-check"></i> Schedule</a></li>
+    <li><a href="#users"><i class="bi bi-people"></i> Users</a></li>
+    <li><a href="index.html"><i class="bi bi-power"></i> Logout</a></li>
+  </ul>
+</div>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
   <div class="dashboard-main">
     <!-- TOPBAR -->
     <div class="dashboard-topbar px-3 px-md-4">
-      <div class="d-flex align-items-center gap-2 gap-md-3">
-        <button class="menu-toggle" id="menuToggle"><i class="bi bi-list"></i></button>
-        <h5 class="mb-0 fw-bold d-none d-md-block" style="font-family:var(--font-heading);">Property Manager Dashboard</h5>
-        <div class="d-md-none d-flex align-items-center gap-2 text-truncate">
-          <img src="assets/img/favicon.png" alt="ArborPro Logo" class="brand-logo-img flex-shrink-0" style="height: 28px; width: auto;">
-          <h5 class="mb-0 fw-bold fs-6 text-truncate" style="font-family:var(--font-heading);">ArborPro</h5>
-        </div>
-      </div>
-      <div class="d-flex align-items-center gap-2 gap-md-3 flex-shrink-0">
+  <button class="menu-toggle" id="menuToggle"><i class="bi bi-list"></i></button>
+      <div class="d-flex align-items-center gap-2 gap-md-3 flex-shrink-0 ms-auto">
         <button class="btn btn-link text-dark p-1 p-md-2 position-relative hover-lift">
           <i class="bi bi-bell fs-5"></i>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white" style="font-size: .6rem; padding: .25rem .45rem;">3</span>
@@ -322,14 +296,14 @@
             </div>
           </div>
           <div class="row g-3 align-items-stretch">
-            <div class="col-md-5 col-lg-5">
+            <div class="col-12 col-md-5 col-lg-5">
               <div class="p-3 border rounded-3 bg-light h-100 d-flex flex-column align-items-center justify-content-center">
-                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?fm=jpg&fit=crop&w=600&q=80" alt="Map Overlay" class="img-fluid rounded-3 mb-3 w-100 shadow-sm" style="height:250px;object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?fm=jpg&fit=crop&w=600&q=80" alt="Map Overlay" class="img-fluid rounded-3 mb-3 w-100 shadow-sm" style="height:200px;object-fit:cover;">
                 <p class="small text-center text-dark fw-bold mb-0"><i class="bi bi-geo-alt text-danger"></i> Interactive Property Map Overlay</p>
               </div>
             </div>
-            <div class="col-md-7 col-lg-7">
-              <div class="table-responsive dash-table h-100" style="max-height:315px; overflow-y:auto;border:1px solid var(--border);border-radius:12px;">
+            <div class="col-12 col-md-7 col-lg-7">
+              <div class="table-responsive dash-table h-100" style="overflow-x:auto;border:1px solid var(--border);border-radius:12px;">
                 <table class="table table-hover align-middle mb-0">
                   <thead class="sticky-top bg-light" style="z-index: 5;"><tr><th class="ps-3">ID</th><th>Species</th><th>Height</th><th>Risk Level</th><th class="pe-3">Last Action</th></tr></thead>
                   <tbody>
