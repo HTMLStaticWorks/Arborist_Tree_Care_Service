@@ -196,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const rtlToggle = document.getElementById('rtlToggle');
   const rtlToggleMobile = document.getElementById('rtlToggleMobile');
   const rtlToggleMobileMain = document.getElementById('rtlToggleMobileMain');
+  const rtlToggleFixed = document.getElementById('rtlToggleFixed');
 
   function setRTL(isRTL) {
     if (isRTL) {
@@ -209,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function updateRTLButtons(isRTL) {
-    [rtlToggle, rtlToggleMobile, rtlToggleMobileMain].forEach(btn => {
+    [rtlToggle, rtlToggleMobile, rtlToggleMobileMain, rtlToggleFixed].forEach(btn => {
       if (btn) {
         btn.textContent = isRTL ? 'LTR' : 'RTL';
         btn.classList.toggle('active', isRTL);
@@ -220,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const savedRTL = localStorage.getItem('arborist-rtl') === 'true';
   setRTL(savedRTL);
 
-  [rtlToggle, rtlToggleMobile, rtlToggleMobileMain].forEach(btn => {
+  [rtlToggle, rtlToggleMobile, rtlToggleMobileMain, rtlToggleFixed].forEach(btn => {
     if (btn) {
       btn.addEventListener('click', function () {
         const isRtl = htmlEl.getAttribute('dir') === 'rtl';

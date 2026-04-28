@@ -41,7 +41,7 @@
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white" style="font-size: .6rem; padding: .25rem .45rem;">3</span>
         </button>
         <div class="d-flex align-items-center gap-2">
-          <button class="btn btn-outline-custom btn-sm px-3 d-flex align-items-center justify-content-center" id="rtlToggle" aria-label="Toggle RTL" style="height:40px; border-radius:12px;">RTL</button>
+          <button class="theme-toggle" id="rtlToggle" aria-label="Toggle RTL" style="font-size:0.75rem; font-weight:700;">RTL</button>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill"></i></button>
         </div>
         <div class="dropdown ps-2 ps-md-3 border-start">
@@ -405,6 +405,9 @@
       &copy; 2026 ArborPro Property Manager. All rights reserved.
     </div>
   </div>
+
+  <!-- Fixed RTL Toggle Button (Top-Right Corner) -->
+  <button id="rtlToggleFixed" title="Toggle RTL / LTR">RTL</button>
 
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">

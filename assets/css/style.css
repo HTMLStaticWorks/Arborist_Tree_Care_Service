@@ -808,6 +808,7 @@ img { max-width: 100%; height: auto; }
   border-radius: var(--radius);
   padding: 32px;
   transition: all var(--transition);
+  text-align: center;
 }
 .testimonial-card:hover {
   transform: translateY(-8px);
@@ -817,6 +818,8 @@ img { max-width: 100%; height: auto; }
 .testimonial-card .stars {
   color: var(--secondary);
   margin-bottom: .8rem;
+  display: flex;
+  justify-content: center;
 }
 .testimonial-card .quote {
   font-style: italic;
@@ -826,8 +829,10 @@ img { max-width: 100%; height: auto; }
 }
 .testimonial-card .client-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 12px;
+  justify-content: center;
 }
 .testimonial-card .client-avatar {
   width: 48px;
@@ -2077,4 +2082,55 @@ img { max-width: 100%; height: auto; }
 
 [data-theme="dark"] .dropdown-divider {
   border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* ---------- Fixed RTL Toggle Button (Top-Right Corner) ---------- */
+#rtlToggleFixed {
+  position: fixed;
+  top: 80px;
+  right: 16px;
+  z-index: 2000;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(27,94,32,0.25);
+  transition: all var(--transition);
+  letter-spacing: 0.5px;
+}
+#rtlToggleFixed:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(27,94,32,0.4);
+}
+#rtlToggleFixed.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+[data-theme="dark"] #rtlToggleFixed {
+  background: var(--surface);
+  border-color: var(--secondary);
+  color: var(--secondary);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+[data-theme="dark"] #rtlToggleFixed:hover,
+[data-theme="dark"] #rtlToggleFixed.active {
+  background: var(--secondary);
+  color: #000;
+  border-color: var(--secondary);
+}
+/* In RTL mode, move button to top-left so it stays accessible */
+[dir="rtl"] #rtlToggleFixed {
+  right: auto;
+  left: 16px;
 }
