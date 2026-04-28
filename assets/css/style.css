@@ -349,11 +349,11 @@ img { max-width: 100%; height: auto; }
 .navbar-custom.scrolled {
   box-shadow: 0 2px 20px var(--shadow);
 }
-.navbar-custom .navbar-brand {
+.navbar-brand {
   font-family: var(--font-heading);
   font-size: 1.6rem !important;
   font-weight: 700;
-  color: #ffffff !important;
+  color: var(--primary) !important;
   display: flex;
   align-items: center;
   gap: 10px;
