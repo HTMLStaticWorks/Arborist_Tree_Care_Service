@@ -258,6 +258,28 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 6px 20px rgba(27,94,32,.3);
 }
 
+.btn-outline-custom {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: .95rem;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-outline-custom:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(27,94,32,.2);
+}
+
 .btn-secondary-custom {
   background: var(--secondary);
   color: #fff;
